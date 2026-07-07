@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cobblestone"
+    },
+    "b": {
+      "item": "cobblestone:stone_gear"
+    }
+  },
+  "result": {
+    "id": "cobblestone:stone_making_machine",
+    "count": 1
+  }
+}

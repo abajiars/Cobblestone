@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobblestone:block/stone_making_machine_top",
+    "up": "cobblestone:block/stone_making_machine_top",
+    "north": "cobblestone:block/stone_machine_top",
+    "east": "cobblestone:block/stone_making_machine_water",
+    "south": "cobblestone:block/stone_machine_top",
+    "west": "cobblestone:block/stone_making_machine_lava",
+    "particle": "cobblestone:block/stone_making_machine_top"
+  },
+  "render_type": "solid"
+}

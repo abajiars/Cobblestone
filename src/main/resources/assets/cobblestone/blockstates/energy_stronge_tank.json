@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,hasenergy=true": {
+      "model": "cobblestone:block/energy_stronge_tank_0"
+    },
+    "facing=north,hasenergy=false": {
+      "model": "cobblestone:block/energy_stronge_tank"
+    },
+    "facing=east,hasenergy=true": {
+      "model": "cobblestone:block/energy_stronge_tank_0",
+      "y": 90
+    },
+    "facing=east,hasenergy=false": {
+      "model": "cobblestone:block/energy_stronge_tank",
+      "y": 90
+    },
+    "facing=south,hasenergy=true": {
+      "model": "cobblestone:block/energy_stronge_tank_0",
+      "y": 180
+    },
+    "facing=south,hasenergy=false": {
+      "model": "cobblestone:block/energy_stronge_tank",
+      "y": 180
+    },
+    "facing=west,hasenergy=true": {
+      "model": "cobblestone:block/energy_stronge_tank_0",
+      "y": 270
+    },
+    "facing=west,hasenergy=false": {
+      "model": "cobblestone:block/energy_stronge_tank",
+      "y": 270
+    }
+  }
+}

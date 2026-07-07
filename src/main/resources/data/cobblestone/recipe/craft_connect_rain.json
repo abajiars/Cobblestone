@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cobblestone"
+    },
+    "b": {
+      "item": "cobblestone:hammer"
+    },
+    "c": {
+      "item": "cobblestone:stone_gear"
+    }
+  },
+  "result": {
+    "id": "cobblestone:rain_connetor",
+    "count": 1
+  }
+}

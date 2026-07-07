@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "heating=true": {
+      "model": "cobblestone:block/stone_heater_0"
+    },
+    "heating=false": {
+      "model": "cobblestone:block/stone_heater"
+    }
+  }
+}

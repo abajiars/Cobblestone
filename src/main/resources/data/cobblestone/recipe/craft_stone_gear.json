@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "cobblestone:stone_stick"
+    },
+    "b": {
+      "item": "minecraft:cobblestone"
+    },
+    "c": {
+      "item": "cobblestone:hammer"
+    }
+  },
+  "result": {
+    "id": "cobblestone:stone_gear",
+    "count": 1
+  }
+}

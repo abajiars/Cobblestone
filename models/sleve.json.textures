@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "top1": "sleve_2",
+        "top2": "sleve_3",
+        "leg": "texture"
+      }
+    }
+  }
+}

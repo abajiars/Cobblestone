@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "cobblestone:block/rainwater_collector_top",
+    "top": "cobblestone:block/rainwater_collector_top",
+    "side": "cobblestone:block/stone_machine_top",
+    "overlay": "cobblestone:block/stone_machine_top",
+    "particle": "cobblestone:block/rainwater_collector_top"
+  },
+  "render_type": "cutout_mipped"
+}

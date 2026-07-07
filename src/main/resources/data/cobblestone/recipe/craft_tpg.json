@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "cobblestone:wrench"
+    },
+    "b": {
+      "item": "cobblestone:mechanical_housing"
+    },
+    "c": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "id": "cobblestone:thermal_power_generator",
+    "count": 1
+  }
+}

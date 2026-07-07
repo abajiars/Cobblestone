@@ -1,0 +1,11 @@
+{
+  "parent": "cobblestone:custom/sleve",
+  "textures": {
+    "all": "minecraft:block/big_dripleaf_side",
+    "particle": "minecraft:block/big_dripleaf_side",
+    "top1": "cobblestone:block/sleve_2",
+    "top2": "cobblestone:block/sleve_3",
+    "leg": "cobblestone:block/texture"
+  },
+  "render_type": "solid"
+}

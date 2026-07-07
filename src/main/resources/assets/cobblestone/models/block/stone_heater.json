@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "cobblestone:block/stone_machine_top",
+    "top": "cobblestone:block/stone_heater",
+    "side": "cobblestone:block/stone_machine_top",
+    "overlay": "cobblestone:block/stone_machine_top",
+    "particle": "cobblestone:block/stone_machine_top"
+  },
+  "render_type": "cutout_mipped"
+}

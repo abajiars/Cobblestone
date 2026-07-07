@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cobblestone:block/pipeline"
+    },
+    "facing=east": {
+      "model": "cobblestone:block/pipeline",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cobblestone:block/pipeline",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cobblestone:block/pipeline",
+      "y": 270
+    }
+  }
+}

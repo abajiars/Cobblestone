@@ -1,0 +1,1401 @@
+{
+  "mod_elements": [
+    {
+      "name": "HammerYouJiFangKuaiShiFangKuaiDeWeiZhi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_you_ji_fang_kuai_shi_fang_kuai_de_wei_zhi",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/HammerYouJiFangKuaiShiFangKuaiDeWeiZhiProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Hammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/hammer.json",
+          "src/main/java/net/mcreator/cobblestone/item/HammerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StoneStick",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_stick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/StoneStickItem.java",
+          "src/main/resources/assets/cobblestone/models/item/stone_stick.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftHammer",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_hammer.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftStoneStick",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_stone_stick",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_stone_stick.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "StoneGear",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_gear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/StoneGearItem.java",
+          "src/main/resources/assets/cobblestone/models/item/stone_gear.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftStoneGear",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_stone_gear",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_stone_gear.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "Cobblestones",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestones",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HammerMachine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_machine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/block/entity/HammerMachineBlockEntity.java",
+          "src/main/resources/assets/cobblestone/models/item/hammer_machine.json",
+          "src/main/resources/assets/cobblestone/models/block/hammer_machine.json",
+          "src/main/java/net/mcreator/cobblestone/block/HammerMachineBlock.java",
+          "src/main/resources/assets/cobblestone/blockstates/hammer_machine.json",
+          "src/main/resources/data/cobblestone/loot_table/blocks/hammer_machine.json"
+        ]
+      }
+    },
+    {
+      "name": "HammerMachineGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_machine_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/client/gui/HammerMachineGUIScreen.java",
+          "src/main/java/net/mcreator/cobblestone/world/inventory/HammerMachineGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Hammer_machine_p",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_machine_p",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/Hammer_machine_pProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SetSecond",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_second",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SetSecondProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftHammerMachine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_hammer_machine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_hammer_machine.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "RainConnetor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rain_connetor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/loot_table/blocks/rain_connetor.json",
+          "src/main/resources/assets/cobblestone/models/block/rain_connetor.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/RainConnetorBlockEntity.java",
+          "src/main/java/net/mcreator/cobblestone/block/RainConnetorBlock.java",
+          "src/main/resources/assets/cobblestone/blockstates/rain_connetor.json",
+          "src/main/resources/assets/cobblestone/models/item/rain_connetor.json"
+        ]
+      }
+    },
+    {
+      "name": "WaterLevelSet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_level_set",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/WaterLevelSetProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ConnectRain",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "connect_rain",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ConnectRainProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftConnectRain",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_connect_rain",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_connect_rain.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftTable",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_table.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "Sleve",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleve",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/block/sleve_0.json",
+          "src/main/resources/assets/cobblestone/models/block/sleve.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/SleveBlockEntity.java",
+          "src/main/resources/assets/cobblestone/blockstates/sleve.json",
+          "src/main/java/net/mcreator/cobblestone/block/SleveBlock.java",
+          "src/main/resources/assets/cobblestone/models/item/sleve.json",
+          "src/main/resources/data/cobblestone/loot_table/blocks/sleve.json"
+        ]
+      }
+    },
+    {
+      "name": "Stonescreen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonescreen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/StonescreenItem.java",
+          "src/main/resources/assets/cobblestone/models/item/stonescreen.json"
+        ]
+      }
+    },
+    {
+      "name": "Setscreen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setscreen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SetscreenProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SieveItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sieve_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SieveItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftSieve",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_sieve",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_sieve.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftStoneScreen",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_stone_screen",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_stone_screen.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "StoneNugget",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_nugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/stone_nugget.json",
+          "src/main/java/net/mcreator/cobblestone/item/StoneNuggetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftCobblestone",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_cobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_cobblestone.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "ReturnScreen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_screen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ReturnScreenProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StoneHeater",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_heater",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/loot_table/blocks/stone_heater.json",
+          "src/main/java/net/mcreator/cobblestone/block/StoneHeaterBlock.java",
+          "src/main/java/net/mcreator/cobblestone/block/entity/StoneHeaterBlockEntity.java",
+          "src/main/resources/assets/cobblestone/blockstates/stone_heater.json",
+          "src/main/resources/assets/cobblestone/models/block/stone_heater.json",
+          "src/main/resources/assets/cobblestone/models/item/stone_heater.json",
+          "src/main/resources/assets/cobblestone/models/block/stone_heater_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Setheating",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setheating",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SetheatingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpiritSmeltGetter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirit_smelt_getter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SpiritSmeltGetterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StoneHeaterGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_heater_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/client/gui/StoneHeaterGUIScreen.java",
+          "src/main/java/net/mcreator/cobblestone/world/inventory/StoneHeaterGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Heating",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heating",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/HeatingProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SetLight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_light",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SetLightProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftHammer2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_hammer_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_hammer_2.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftStoneHeater",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_stone_heater",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_stone_heater.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "JustCobblestone",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "just_cobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/advancement/just_cobblestone.json"
+        ]
+      },
+      "path": "~/Achievement"
+    },
+    {
+      "name": "CraftAHammer",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_a_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/advancement/craft_a_hammer.json"
+        ]
+      },
+      "path": "~/Achievement"
+    },
+    {
+      "name": "AStoneGear",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_stone_gear",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/advancement/a_stone_gear.json"
+        ]
+      },
+      "path": "~/Achievement"
+    },
+    {
+      "name": "GlassDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/glass_dust.json",
+          "src/main/java/net/mcreator/cobblestone/item/GlassDustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "QuartzDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/quartz_dust.json",
+          "src/main/java/net/mcreator/cobblestone/item/QuartzDustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "StoneMakingMachine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_making_machine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/block/StoneMakingMachineBlock.java",
+          "src/main/resources/assets/cobblestone/models/block/stone_making_machine.json",
+          "src/main/resources/assets/cobblestone/blockstates/stone_making_machine.json",
+          "src/main/resources/assets/cobblestone/models/item/stone_making_machine.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/StoneMakingMachineBlockEntity.java",
+          "src/main/resources/data/cobblestone/loot_table/blocks/stone_making_machine.json"
+        ]
+      }
+    },
+    {
+      "name": "StoneMakingMachineGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_making_machine_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/world/inventory/StoneMakingMachineGUIMenu.java",
+          "src/main/java/net/mcreator/cobblestone/client/gui/StoneMakingMachineGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "MakingStone",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "making_stone",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/MakingStoneProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftStonemakingMachine",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_stonemaking_machine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_stonemaking_machine.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "Glass",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/advancement/recipes/glass.json",
+          "src/main/resources/data/cobblestone/recipe/glass.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "InitialItems",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "initial_items",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/InitialItemsProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MechanicalHousing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mechanical_housing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/block/MechanicalHousingBlock.java",
+          "src/main/resources/data/cobblestone/loot_table/blocks/mechanical_housing.json",
+          "src/main/resources/assets/cobblestone/models/block/mechanical_housing.json",
+          "src/main/resources/assets/cobblestone/models/item/mechanical_housing.json",
+          "src/main/resources/assets/cobblestone/blockstates/mechanical_housing.json"
+        ]
+      }
+    },
+    {
+      "name": "Wrench",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrench",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/WrenchItem.java",
+          "src/main/resources/assets/cobblestone/models/item/wrench.json"
+        ]
+      }
+    },
+    {
+      "name": "WrenchDestroyMachine",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wrench_destroy_machine",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/WrenchDestroyMachineProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ThermalPowerGenerator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermal_power_generator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/block/thermal_power_generator.json",
+          "src/main/resources/assets/cobblestone/models/block/thermal_power_generator_0.json",
+          "src/main/resources/data/cobblestone/loot_table/blocks/thermal_power_generator.json",
+          "src/main/resources/assets/cobblestone/blockstates/thermal_power_generator.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/ThermalPowerGeneratorBlockEntity.java",
+          "src/main/java/net/mcreator/cobblestone/block/ThermalPowerGeneratorBlock.java",
+          "src/main/resources/assets/cobblestone/models/item/thermal_power_generator.json"
+        ]
+      }
+    },
+    {
+      "name": "ThermalPowerGeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermal_power_generation",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ThermalPowerGenerationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SetStoneEnergy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_stone_energy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SetStoneEnergyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftMechanicalHousing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_mechanical_housing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_mechanical_housing.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftWrench",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_wrench",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_wrench.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftTPG",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_tpg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_tpg.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "ESTGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "estgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/client/gui/ESTGUIScreen.java",
+          "src/main/java/net/mcreator/cobblestone/world/inventory/ESTGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "EnergyStrongeTank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_stronge_tank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/block/entity/EnergyStrongeTankBlockEntity.java",
+          "src/main/resources/data/cobblestone/loot_table/blocks/energy_stronge_tank.json",
+          "src/main/resources/assets/cobblestone/blockstates/energy_stronge_tank.json",
+          "src/main/resources/assets/cobblestone/models/item/energy_stronge_tank.json",
+          "src/main/resources/assets/cobblestone/models/block/energy_stronge_tank.json",
+          "src/main/resources/assets/cobblestone/models/block/energy_stronge_tank_0.json",
+          "src/main/java/net/mcreator/cobblestone/block/EnergyStrongeTankBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Pipeline",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipeline",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/loot_table/blocks/pipeline.json",
+          "src/main/resources/assets/cobblestone/blockstates/pipeline.json",
+          "src/main/java/net/mcreator/cobblestone/block/PipelineBlock.java",
+          "src/main/resources/assets/cobblestone/models/item/pipeline.json",
+          "src/main/resources/assets/cobblestone/models/block/pipeline.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/PipelineBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "SetPipelineEnergy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_pipeline_energy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SetPipelineEnergyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Transmission",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmission",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/TransmissionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ESTSprite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "est_sprite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ESTSpriteProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ESTText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "est_text",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ESTTextProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EST",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "est",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ESTProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "initial",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "facing_var",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Hammer"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Wrench"
+    ],
+    "BLOCKS:mod:cant_powered": [
+      "CUSTOM:ThermalPowerGenerator"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:Cobblestones": [
+      "QuartzDust",
+      "GlassDust",
+      "StoneNugget",
+      "Wrench",
+      "Hammer",
+      "StoneStick",
+      "StoneGear",
+      "RainConnetor",
+      "HammerMachine",
+      "StoneHeater",
+      "StoneMakingMachine",
+      "Sleve",
+      "Stonescreen",
+      "MechanicalHousing",
+      "ThermalPowerGenerator",
+      "EnergyStrongeTank",
+      "Pipeline"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.cobblestone.hammer": "Hammer",
+      "item.cobblestone.stone_stick": "Stone Stick",
+      "item.cobblestone.hammer.description_0": "锤碎一切。",
+      "item.cobblestone.stone_gear": "Stone Gear",
+      "item_group.cobblestone.cobblestones": "Cobblestones",
+      "block.cobblestone.hammer_machine": "Hammer Machine",
+      "block.cobblestone.rain_connetor": "Rain Connetor",
+      "block.cobblestone.sleve": "Sleve",
+      "item.cobblestone.stonescreen": "Stonescreen",
+      "item.cobblestone.stone_nugget": "Stone Nugget",
+      "block.cobblestone.stone_heater": "Stone Heater",
+      "advancements.just_cobblestone.descr": "Just Cobblestone, and birth all things!",
+      "advancements.just_cobblestone.title": "Cobblestone",
+      "advancements.craft_a_hammer.descr": "Craft a hammer",
+      "advancements.craft_a_hammer.title": "Hammer",
+      "advancements.a_stone_gear.descr": "Craft a stone gear.It is animportant material for machines",
+      "advancements.a_stone_gear.title": "A Stone Gear",
+      "item.cobblestone.glass_dust": "Glass Dust",
+      "item.cobblestone.quartz_dust": "Quartz Dust",
+      "block.cobblestone.stone_making_machine": "Stone Making Machine",
+      "gui.cobblestone.stone_making_machine_gui.label_empty": "",
+      "block.cobblestone.mechanical_housing": "Mechanical Housing",
+      "item.cobblestone.wrench": "Wrench",
+      "item.cobblestone.wrench.description_0": "一般情况下shift+左键拆除机械",
+      "block.cobblestone.thermal_power_generator": "Thermal Power Generator",
+      "gui.cobblestone.estgui.label_empty": "",
+      "block.cobblestone.energy_stronge_tank": "Energy Stronge Tank",
+      "block.cobblestone.pipeline": "Copper Pipeline"
+    },
+    "zh_cn": {
+      "item.cobblestone.hammer": "锤子",
+      "item.cobblestone.stone_stick": "石杆",
+      "item.cobblestone.hammer.description_0": "锤碎一切。",
+      "item.cobblestone.stone_gear": "石齿轮",
+      "item_group.cobblestone.cobblestones": "圆石生万物",
+      "block.cobblestone.hammer_machine": "锤击器",
+      "block.cobblestone.rain_connetor": "雨水收集器",
+      "block.cobblestone.sleve": "筛子",
+      "item.cobblestone.stonescreen": "石制筛网",
+      "item.cobblestone.stone_nugget": "石粒",
+      "block.cobblestone.stone_heater": "石制加热器",
+      "advancements.just_cobblestone.descr": "只有原石，但可以生出万物！",
+      "advancements.just_cobblestone.title": "圆石生万物",
+      "advancements.craft_a_hammer.descr": "做一把锤子",
+      "advancements.craft_a_hammer.title": "锤子",
+      "advancements.a_stone_gear.descr": "制作一个石齿轮，他是你重要的机器材料",
+      "advancements.a_stone_gear.title": "石齿轮",
+      "item.cobblestone.glass_dust": "玻璃粉",
+      "item.cobblestone.quartz_dust": "石英粉",
+      "block.cobblestone.stone_making_machine": "造石机",
+      "gui.cobblestone.stone_making_machine_gui.label_empty": "",
+      "block.cobblestone.mechanical_housing": "机械外壳",
+      "item.cobblestone.wrench": "扳手",
+      "item.cobblestone.wrench.description_0": "一般情况下shift+左键拆除机械",
+      "block.cobblestone.thermal_power_generator": "火力发电机",
+      "gui.cobblestone.estgui.label_empty": "",
+      "block.cobblestone.energy_stronge_tank": "能量储罐",
+      "block.cobblestone.pipeline": "铜导线"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/cobblestone/init/CobblestoneModMenus.java",
+      "src/main/java/net/mcreator/cobblestone/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/cobblestone/init/CobblestoneModScreens.java",
+      "src/main/java/net/mcreator/cobblestone/init/CobblestoneModBlocks.java",
+      "src/main/java/net/mcreator/cobblestone/init/CobblestoneModBlockEntities.java",
+      "src/main/java/net/mcreator/cobblestone/init/CobblestoneModItems.java",
+      "src/main/java/net/mcreator/cobblestone/CobblestoneMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/cobblestone/init/CobblestoneModTabs.java",
+      "src/main/java/net/mcreator/cobblestone/network/CobblestoneModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "repice",
+        "children": []
+      },
+      {
+        "name": "Achievement",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "cobblestone",
+    "modName": "Cobblestone",
+    "version": "1.0.0-alpha",
+    "description": "Cobblestone give birth to all things.",
+    "author": "MCreator,abajiar",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.cobblestone"
+  },
+  "mcreatorVersion": 202600114619
+}

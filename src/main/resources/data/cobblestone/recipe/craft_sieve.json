@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "d d"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:cobblestone"
+    },
+    "b": {
+      "item": "cobblestone:hammer"
+    },
+    "c": {
+      "item": "cobblestone:stone_gear"
+    },
+    "d": {
+      "item": "cobblestone:stone_stick"
+    }
+  },
+  "result": {
+    "id": "cobblestone:sleve",
+    "count": 1
+  }
+}

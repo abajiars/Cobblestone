@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "screen=1": {
+      "model": "cobblestone:block/sleve_0"
+    },
+    "screen=0": {
+      "model": "cobblestone:block/sleve"
+    }
+  }
+}

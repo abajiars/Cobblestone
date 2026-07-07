@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,heating=true": {
+      "model": "cobblestone:block/thermal_power_generator_0"
+    },
+    "facing=north,heating=false": {
+      "model": "cobblestone:block/thermal_power_generator"
+    },
+    "facing=east,heating=true": {
+      "model": "cobblestone:block/thermal_power_generator_0",
+      "y": 90
+    },
+    "facing=east,heating=false": {
+      "model": "cobblestone:block/thermal_power_generator",
+      "y": 90
+    },
+    "facing=south,heating=true": {
+      "model": "cobblestone:block/thermal_power_generator_0",
+      "y": 180
+    },
+    "facing=south,heating=false": {
+      "model": "cobblestone:block/thermal_power_generator",
+      "y": 180
+    },
+    "facing=west,heating=true": {
+      "model": "cobblestone:block/thermal_power_generator_0",
+      "y": 270
+    },
+    "facing=west,heating=false": {
+      "model": "cobblestone:block/thermal_power_generator",
+      "y": 270
+    }
+  }
+}
