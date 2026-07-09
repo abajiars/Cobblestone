@@ -1241,6 +1241,143 @@
           "src/main/java/net/mcreator/cobblestone/procedures/ESTProcedure.java"
         ]
       }
+    },
+    {
+      "name": "CopperNugget",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_nugget",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/copper_nugget.json",
+          "src/main/java/net/mcreator/cobblestone/item/CopperNuggetItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftCopperIngot",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_copper_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_copper_ingot.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftPipeline",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_pipeline",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_pipeline.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "WorkingLight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "working_light",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/WorkingLightProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElectricHammerMachine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_hammer_machine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/electric_hammer_machine.json",
+          "src/main/resources/assets/cobblestone/blockstates/electric_hammer_machine.json",
+          "src/main/resources/data/cobblestone/loot_table/blocks/electric_hammer_machine.json",
+          "src/main/resources/assets/cobblestone/models/block/electric_hammer_machine_0.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/ElectricHammerMachineBlockEntity.java",
+          "src/main/resources/assets/cobblestone/models/block/electric_hammer_machine.json",
+          "src/main/java/net/mcreator/cobblestone/block/ElectricHammerMachineBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "ElectricHammermachinep",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_hammermachinep",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ElectricHammermachinepProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SetHammerSprite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_hammer_sprite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SetHammerSpriteProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1274,6 +1411,7 @@
       "QuartzDust",
       "GlassDust",
       "StoneNugget",
+      "CopperNugget",
       "Wrench",
       "Hammer",
       "StoneStick",
@@ -1287,6 +1425,7 @@
       "MechanicalHousing",
       "ThermalPowerGenerator",
       "EnergyStrongeTank",
+      "ElectricHammerMachine",
       "Pipeline"
     ]
   },
@@ -1319,7 +1458,9 @@
       "block.cobblestone.thermal_power_generator": "Thermal Power Generator",
       "gui.cobblestone.estgui.label_empty": "",
       "block.cobblestone.energy_stronge_tank": "Energy Stronge Tank",
-      "block.cobblestone.pipeline": "Copper Pipeline"
+      "block.cobblestone.pipeline": "Copper Pipeline",
+      "item.cobblestone.copper_nugget": "Copper Nugget",
+      "block.cobblestone.electric_hammer_machine": "Electric Hammer Machine"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -1349,7 +1490,9 @@
       "block.cobblestone.thermal_power_generator": "火力发电机",
       "gui.cobblestone.estgui.label_empty": "",
       "block.cobblestone.energy_stronge_tank": "能量储罐",
-      "block.cobblestone.pipeline": "铜导线"
+      "block.cobblestone.pipeline": "铜导线",
+      "item.cobblestone.copper_nugget": "铜粒",
+      "block.cobblestone.electric_hammer_machine": "电动锤击器"
     }
   },
   "metadata": {

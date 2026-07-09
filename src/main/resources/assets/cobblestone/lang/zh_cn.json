@@ -26,5 +26,7 @@
   "block.cobblestone.thermal_power_generator": "火力发电机",
   "gui.cobblestone.estgui.label_empty": "",
   "block.cobblestone.energy_stronge_tank": "能量储罐",
-  "block.cobblestone.pipeline": "铜导线"
+  "block.cobblestone.pipeline": "铜导线",
+  "item.cobblestone.copper_nugget": "铜粒",
+  "block.cobblestone.electric_hammer_machine": "电动锤击器"
 }

@@ -26,5 +26,7 @@
   "block.cobblestone.thermal_power_generator": "Thermal Power Generator",
   "gui.cobblestone.estgui.label_empty": "",
   "block.cobblestone.energy_stronge_tank": "Energy Stronge Tank",
-  "block.cobblestone.pipeline": "Copper Pipeline"
+  "block.cobblestone.pipeline": "Copper Pipeline",
+  "item.cobblestone.copper_nugget": "Copper Nugget",
+  "block.cobblestone.electric_hammer_machine": "Electric Hammer Machine"
 }

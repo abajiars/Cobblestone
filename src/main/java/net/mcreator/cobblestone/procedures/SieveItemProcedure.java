@@ -106,6 +106,13 @@ public class SieveItemProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
+						if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.COPPER_NUGGET.get()));
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
+						}
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);

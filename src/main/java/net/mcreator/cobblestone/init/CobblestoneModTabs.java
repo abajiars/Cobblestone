@@ -26,6 +26,7 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModItems.QUARTZ_DUST.get());
 				tabData.accept(CobblestoneModItems.GLASS_DUST.get());
 				tabData.accept(CobblestoneModItems.STONE_NUGGET.get());
+				tabData.accept(CobblestoneModItems.COPPER_NUGGET.get());
 				tabData.accept(CobblestoneModItems.WRENCH.get());
 				tabData.accept(CobblestoneModItems.HAMMER.get());
 				tabData.accept(CobblestoneModItems.STONE_STICK.get());
@@ -39,6 +40,7 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModBlocks.MECHANICAL_HOUSING.get().asItem());
 				tabData.accept(CobblestoneModBlocks.THERMAL_POWER_GENERATOR.get().asItem());
 				tabData.accept(CobblestoneModBlocks.ENERGY_STRONGE_TANK.get().asItem());
+				tabData.accept(CobblestoneModBlocks.ELECTRIC_HAMMER_MACHINE.get().asItem());
 				tabData.accept(CobblestoneModBlocks.PIPELINE.get().asItem());
 			}).build());
 

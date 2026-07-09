@@ -33,6 +33,8 @@ public class CobblestoneModItems {
 	public static final DeferredItem<Item> THERMAL_POWER_GENERATOR;
 	public static final DeferredItem<Item> ENERGY_STRONGE_TANK;
 	public static final DeferredItem<Item> PIPELINE;
+	public static final DeferredItem<Item> COPPER_NUGGET;
+	public static final DeferredItem<Item> ELECTRIC_HAMMER_MACHINE;
 	static {
 		HAMMER = REGISTRY.register("hammer", HammerItem::new);
 		STONE_STICK = REGISTRY.register("stone_stick", StoneStickItem::new);
@@ -51,6 +53,8 @@ public class CobblestoneModItems {
 		THERMAL_POWER_GENERATOR = block(CobblestoneModBlocks.THERMAL_POWER_GENERATOR);
 		ENERGY_STRONGE_TANK = block(CobblestoneModBlocks.ENERGY_STRONGE_TANK);
 		PIPELINE = block(CobblestoneModBlocks.PIPELINE);
+		COPPER_NUGGET = REGISTRY.register("copper_nugget", CopperNuggetItem::new);
+		ELECTRIC_HAMMER_MACHINE = block(CobblestoneModBlocks.ELECTRIC_HAMMER_MACHINE);
 	}
 
 	// Start of user code block custom items

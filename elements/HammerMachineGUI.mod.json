@@ -68,12 +68,16 @@
         }
       },
       {
-        "type": "image",
+        "type": "sprite",
         "data": {
-          "image": "guihammer.png",
-          "use1Xscale": false,
+          "sprite": "gh.png",
+          "spritesCount": 3,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SetHammerSprite"
+          },
           "x": 206,
-          "y": 69,
+          "y": 70,
           "locked": false
         }
       }

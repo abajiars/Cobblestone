@@ -31,6 +31,8 @@ public class CobblestoneModBlockEntities {
 			ThermalPowerGeneratorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<EnergyStrongeTankBlockEntity>> ENERGY_STRONGE_TANK = register("energy_stronge_tank", CobblestoneModBlocks.ENERGY_STRONGE_TANK, EnergyStrongeTankBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PipelineBlockEntity>> PIPELINE = register("pipeline", CobblestoneModBlocks.PIPELINE, PipelineBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ElectricHammerMachineBlockEntity>> ELECTRIC_HAMMER_MACHINE = register("electric_hammer_machine", CobblestoneModBlocks.ELECTRIC_HAMMER_MACHINE,
+			ElectricHammerMachineBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -48,5 +50,6 @@ public class CobblestoneModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, THERMAL_POWER_GENERATOR.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ENERGY_STRONGE_TANK.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PIPELINE.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ELECTRIC_HAMMER_MACHINE.get(), SidedInvWrapper::new);
 	}
 }
