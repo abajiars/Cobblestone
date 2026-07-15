@@ -25,6 +25,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cobblestone.world.inventory.ESTGUIMenu;
+import net.mcreator.cobblestone.procedures.WrenchDestroyMachineProcedure;
 import net.mcreator.cobblestone.procedures.SetStoneEnergyProcedure;
 import net.mcreator.cobblestone.procedures.ESTProcedure;
 import net.mcreator.cobblestone.block.entity.EnergyStrongeTankBlockEntity;
@@ -71,6 +72,12 @@ public class EnergyStrongeTankBlock extends Block implements EntityBlock {
 		super.tick(blockstate, world, pos, random);
 		ESTProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
+		super.attack(blockstate, world, pos, entity);
+		WrenchDestroyMachineProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 
 	@Override

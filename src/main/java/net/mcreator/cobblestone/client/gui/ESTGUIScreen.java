@@ -69,6 +69,8 @@ public class ESTGUIScreen extends AbstractContainerScreen<ESTGUIMenu> implements
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, ESTTextProcedure.execute(world, x, y, z), 12, 70, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cobblestone.estgui.label_input"), 74, 13, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.cobblestone.estgui.label_output"), 73, 53, -12829636, false);
 	}
 
 	@Override

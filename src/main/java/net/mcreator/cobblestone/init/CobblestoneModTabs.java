@@ -25,6 +25,7 @@ public class CobblestoneModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cobblestone.cobblestones")).icon(() -> new ItemStack(Blocks.COBBLESTONE)).displayItems((parameters, tabData) -> {
 				tabData.accept(CobblestoneModItems.QUARTZ_DUST.get());
 				tabData.accept(CobblestoneModItems.GLASS_DUST.get());
+				tabData.accept(CobblestoneModItems.COAL_POWDER.get());
 				tabData.accept(CobblestoneModItems.STONE_NUGGET.get());
 				tabData.accept(CobblestoneModItems.COPPER_NUGGET.get());
 				tabData.accept(CobblestoneModItems.WRENCH.get());
@@ -42,6 +43,7 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModBlocks.ENERGY_STRONGE_TANK.get().asItem());
 				tabData.accept(CobblestoneModBlocks.ELECTRIC_HAMMER_MACHINE.get().asItem());
 				tabData.accept(CobblestoneModBlocks.PIPELINE.get().asItem());
+				tabData.accept(CobblestoneModItems.BATTERY.get());
 			}).build());
 
 	@SubscribeEvent

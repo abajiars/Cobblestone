@@ -26,7 +26,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class EnergyStrongeTankBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(0, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(2, ItemStack.EMPTY);
 
 	public EnergyStrongeTankBlockEntity(BlockPos position, BlockState state) {
 		super(CobblestoneModBlockEntities.ENERGY_STRONGE_TANK.get(), position, state);

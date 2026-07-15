@@ -37,6 +37,8 @@ public class CobblestoneModItems {
 	public static final DeferredItem<Item> ELECTRIC_HAMMER_MACHINE;
 	public static final DeferredItem<Item> IRON_GEAR;
 	public static final DeferredItem<Item> IRON_STICK;
+	public static final DeferredItem<Item> COAL_POWDER;
+	public static final DeferredItem<Item> BATTERY;
 	static {
 		HAMMER = REGISTRY.register("hammer", HammerItem::new);
 		STONE_STICK = REGISTRY.register("stone_stick", StoneStickItem::new);
@@ -59,6 +61,8 @@ public class CobblestoneModItems {
 		ELECTRIC_HAMMER_MACHINE = block(CobblestoneModBlocks.ELECTRIC_HAMMER_MACHINE);
 		IRON_GEAR = REGISTRY.register("iron_gear", IronGearItem::new);
 		IRON_STICK = REGISTRY.register("iron_stick", IronStickItem::new);
+		COAL_POWDER = REGISTRY.register("coal_powder", CoalPowderItem::new);
+		BATTERY = REGISTRY.register("battery", BatteryItem::new);
 	}
 
 	// Start of user code block custom items

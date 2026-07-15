@@ -30,5 +30,9 @@
   "item.cobblestone.copper_nugget": "Copper Nugget",
   "block.cobblestone.electric_hammer_machine": "Electric Hammer Machine",
   "item.cobblestone.iron_gear": "Iron Gear",
-  "item.cobblestone.iron_stick": "Iron Stick"
+  "item.cobblestone.iron_stick": "Iron Stick",
+  "item.cobblestone.coal_powder": "Coal Powder",
+  "item.cobblestone.battery": "Battery",
+  "gui.cobblestone.estgui.label_output": "output",
+  "gui.cobblestone.estgui.label_input": "input"
 }
