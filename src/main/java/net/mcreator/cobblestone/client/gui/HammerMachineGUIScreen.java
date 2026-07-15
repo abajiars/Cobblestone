@@ -21,6 +21,7 @@ public class HammerMachineGUIScreen extends AbstractContainerScreen<HammerMachin
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("cobblestone:textures/screens/hammer_machine_gui.png");
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("cobblestone:textures/screens/guihammer.png");
 	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("cobblestone:textures/screens/gh.png");
 
 	public HammerMachineGUIScreen(HammerMachineGUIMenu container, Inventory inventory, Component text) {
@@ -52,6 +53,7 @@ public class HammerMachineGUIScreen extends AbstractContainerScreen<HammerMachin
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(IMAGE_0, this.leftPos + 80, this.topPos + 55, 0, 0, 16, 16, 16, 16);
 		guiGraphics.blit(SPRITE_0, this.leftPos + 80, this.topPos + 33, Mth.clamp((int) SetHammerSpriteProcedure.execute(world, x, y, z) * 16, 0, 32), 0, 16, 16, 48, 16);
 		RenderSystem.disableBlend();
 	}

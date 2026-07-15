@@ -61,6 +61,32 @@ public class ConnectRainProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 				}
+				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.GRAVEL) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y - 1, z);
+						BlockState _bs = Blocks.MOSS_BLOCK.defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Property<?> _propertyOld : _bso.getProperties()) {
+							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+							if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+								try {
+									_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
+					}
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("level", 0);
+						}
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+				}
 			}
 		}
 	}

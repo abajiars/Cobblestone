@@ -188,6 +188,9 @@
     "onTickUpdate": {
       "name": "ElectricHammermachinep"
     },
+    "onStartToDestroy": {
+      "name": "WrenchDestroyMachine"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

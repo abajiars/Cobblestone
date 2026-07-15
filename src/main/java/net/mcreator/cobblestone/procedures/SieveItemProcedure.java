@@ -101,7 +101,7 @@ public class SieveItemProcedure {
 						}
 						if (Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
 							if (world instanceof ServerLevel _level) {
-								ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.STONE_NUGGET.get()));
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.BONE_MEAL));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}
@@ -109,6 +109,45 @@ public class SieveItemProcedure {
 						if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.COPPER_NUGGET.get()));
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
+						}
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null) {
+								_blockEntity.getPersistentData().putDouble("second", 0);
+							}
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+					}
+				}
+				if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.MOSS_BLOCK) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("second", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") + 1));
+						}
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") >= 60) {
+						world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
+						if (Mth.nextInt(RandomSource.create(), 1, 10) <= 5) {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.WHEAT_SEEDS));
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
+						}
+						if (Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Blocks.OAK_SAPLING));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}

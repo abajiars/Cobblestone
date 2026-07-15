@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "cd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:moss_block"
+    },
+    "b": {
+      "item": "minecraft:clay_ball"
+    },
+    "c": {
+      "item": "cobblestone:stone_nugget"
+    },
+    "d": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "result": {
+    "id": "minecraft:dirt",
+    "count": 1
+  }
+}

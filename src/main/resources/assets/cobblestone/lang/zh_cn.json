@@ -28,5 +28,7 @@
   "block.cobblestone.energy_stronge_tank": "能量储罐",
   "block.cobblestone.pipeline": "铜导线",
   "item.cobblestone.copper_nugget": "铜粒",
-  "block.cobblestone.electric_hammer_machine": "电动锤击器"
+  "block.cobblestone.electric_hammer_machine": "电动锤击器",
+  "item.cobblestone.iron_gear": "铁齿轮",
+  "item.cobblestone.iron_stick": "铁杆"
 }

@@ -28,5 +28,7 @@
   "block.cobblestone.energy_stronge_tank": "Energy Stronge Tank",
   "block.cobblestone.pipeline": "Copper Pipeline",
   "item.cobblestone.copper_nugget": "Copper Nugget",
-  "block.cobblestone.electric_hammer_machine": "Electric Hammer Machine"
+  "block.cobblestone.electric_hammer_machine": "Electric Hammer Machine",
+  "item.cobblestone.iron_gear": "Iron Gear",
+  "item.cobblestone.iron_stick": "Iron Stick"
 }
