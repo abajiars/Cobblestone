@@ -23,6 +23,7 @@ public class CobblestoneModBlocks {
 	public static final DeferredBlock<Block> ENERGY_STRONGE_TANK;
 	public static final DeferredBlock<Block> PIPELINE;
 	public static final DeferredBlock<Block> ELECTRIC_HAMMER_MACHINE;
+	public static final DeferredBlock<Block> CHARGING_DEVICE;
 	static {
 		HAMMER_MACHINE = REGISTRY.register("hammer_machine", HammerMachineBlock::new);
 		RAIN_CONNETOR = REGISTRY.register("rain_connetor", RainConnetorBlock::new);
@@ -34,6 +35,7 @@ public class CobblestoneModBlocks {
 		ENERGY_STRONGE_TANK = REGISTRY.register("energy_stronge_tank", EnergyStrongeTankBlock::new);
 		PIPELINE = REGISTRY.register("pipeline", PipelineBlock::new);
 		ELECTRIC_HAMMER_MACHINE = REGISTRY.register("electric_hammer_machine", ElectricHammerMachineBlock::new);
+		CHARGING_DEVICE = REGISTRY.register("charging_device", ChargingDeviceBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

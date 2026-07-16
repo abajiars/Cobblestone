@@ -34,5 +34,10 @@
   "item.cobblestone.coal_powder": "Coal Powder",
   "item.cobblestone.battery": "Battery",
   "gui.cobblestone.estgui.label_output": "output",
-  "gui.cobblestone.estgui.label_input": "input"
+  "gui.cobblestone.estgui.label_input": "input",
+  "cobblestone.configuration.max_pipeline_energy": "max_pipeline_energy",
+  "cobblestone.configuration.max_stone_energy": "max_stone_energy",
+  "cobblestone.configuration.max_energy": "MaxEnergy",
+  "block.cobblestone.charging_device": "Charging Device",
+  "item.cobblestone.quartz_crystal": "Quartz Crystal"
 }

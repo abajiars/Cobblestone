@@ -6,6 +6,8 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.cobblestone.configuration.SetEnergyConfiguration;
+
 public class SetPipelineEnergyProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.isClientSide()) {
@@ -14,7 +16,7 @@ public class SetPipelineEnergyProcedure {
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null) {
 				_blockEntity.getPersistentData().putDouble("StoneEnergy", 0);
-				_blockEntity.getPersistentData().putDouble("MaxStoneEnergy", 1000);
+				_blockEntity.getPersistentData().putDouble("MaxStoneEnergy", ((double) SetEnergyConfiguration.MAX_PIPELINE_ENERGY.get()));
 			}
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);

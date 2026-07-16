@@ -34,5 +34,10 @@
   "item.cobblestone.coal_powder": "煤粉",
   "item.cobblestone.battery": "电池",
   "gui.cobblestone.estgui.label_output": "输出",
-  "gui.cobblestone.estgui.label_input": "输入"
+  "gui.cobblestone.estgui.label_input": "输入",
+  "cobblestone.configuration.max_pipeline_energy": "导线最大存储电力",
+  "cobblestone.configuration.max_stone_energy": "机器最大存储电力",
+  "cobblestone.configuration.max_energy": "最大能源",
+  "block.cobblestone.charging_device": "充能器",
+  "item.cobblestone.quartz_crystal": "石英水晶"
 }

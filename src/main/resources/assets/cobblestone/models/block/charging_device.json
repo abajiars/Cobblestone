@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cobblestone:block/machine_side",
+    "up": "cobblestone:block/machine_side",
+    "north": "cobblestone:block/charging_device",
+    "east": "cobblestone:block/machine_side",
+    "south": "cobblestone:block/machine_side",
+    "west": "cobblestone:block/machine_side",
+    "particle": "cobblestone:block/machine_side"
+  },
+  "render_type": "solid"
+}

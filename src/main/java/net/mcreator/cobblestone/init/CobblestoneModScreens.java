@@ -12,6 +12,7 @@ import net.mcreator.cobblestone.client.gui.StoneMakingMachineGUIScreen;
 import net.mcreator.cobblestone.client.gui.StoneHeaterGUIScreen;
 import net.mcreator.cobblestone.client.gui.HammerMachineGUIScreen;
 import net.mcreator.cobblestone.client.gui.ESTGUIScreen;
+import net.mcreator.cobblestone.client.gui.ChargingDeviceGUIScreen;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class CobblestoneModScreens {
@@ -21,6 +22,7 @@ public class CobblestoneModScreens {
 		event.register(CobblestoneModMenus.STONE_HEATER_GUI.get(), StoneHeaterGUIScreen::new);
 		event.register(CobblestoneModMenus.STONE_MAKING_MACHINE_GUI.get(), StoneMakingMachineGUIScreen::new);
 		event.register(CobblestoneModMenus.ESTGUI.get(), ESTGUIScreen::new);
+		event.register(CobblestoneModMenus.CHARGING_DEVICE_GUI.get(), ChargingDeviceGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

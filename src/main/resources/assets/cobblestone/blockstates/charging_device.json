@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "is_working=true": {
+      "model": "cobblestone:block/charging_device_0"
+    },
+    "is_working=false": {
+      "model": "cobblestone:block/charging_device"
+    }
+  }
+}

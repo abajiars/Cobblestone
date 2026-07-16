@@ -1446,20 +1446,6 @@
       "path": "~/repice"
     },
     {
-      "name": "Quartz",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "quartz",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cobblestone/recipe/quartz.json",
-          "src/main/resources/data/cobblestone/advancement/recipes/quartz.json"
-        ]
-      },
-      "path": "~/repice"
-    },
-    {
       "name": "CoalPowder",
       "type": "item",
       "compiles": true,
@@ -1529,6 +1515,92 @@
         ]
       },
       "path": "~/repice"
+    },
+    {
+      "name": "SetEnergy",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_energy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/configuration/SetEnergyConfiguration.java"
+        ]
+      }
+    },
+    {
+      "name": "ChargingDevice",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charging_device",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/loot_table/blocks/charging_device.json",
+          "src/main/java/net/mcreator/cobblestone/block/ChargingDeviceBlock.java",
+          "src/main/resources/assets/cobblestone/blockstates/charging_device.json",
+          "src/main/resources/assets/cobblestone/models/block/charging_device.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/ChargingDeviceBlockEntity.java",
+          "src/main/resources/assets/cobblestone/models/item/charging_device.json",
+          "src/main/resources/assets/cobblestone/models/block/charging_device_0.json"
+        ]
+      }
+    },
+    {
+      "name": "ChargingDeviceGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charging_device_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/world/inventory/ChargingDeviceGUIMenu.java",
+          "src/main/java/net/mcreator/cobblestone/client/gui/ChargingDeviceGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ChargingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charging_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ChargingItemProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "QuartzCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/QuartzCrystalItem.java",
+          "src/main/resources/assets/cobblestone/models/item/quartz_crystal.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1565,6 +1637,7 @@
       "CoalPowder",
       "StoneNugget",
       "CopperNugget",
+      "QuartzCrystal",
       "Wrench",
       "Hammer",
       "StoneStick",
@@ -1579,6 +1652,7 @@
       "ThermalPowerGenerator",
       "EnergyStrongeTank",
       "ElectricHammerMachine",
+      "ChargingDevice",
       "Pipeline",
       "Battery"
     ]
@@ -1620,7 +1694,12 @@
       "item.cobblestone.coal_powder": "Coal Powder",
       "item.cobblestone.battery": "Battery",
       "gui.cobblestone.estgui.label_output": "output",
-      "gui.cobblestone.estgui.label_input": "input"
+      "gui.cobblestone.estgui.label_input": "input",
+      "cobblestone.configuration.max_pipeline_energy": "max_pipeline_energy",
+      "cobblestone.configuration.max_stone_energy": "max_stone_energy",
+      "cobblestone.configuration.max_energy": "MaxEnergy",
+      "block.cobblestone.charging_device": "Charging Device",
+      "item.cobblestone.quartz_crystal": "Quartz Crystal"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -1658,7 +1737,12 @@
       "item.cobblestone.coal_powder": "煤粉",
       "item.cobblestone.battery": "电池",
       "gui.cobblestone.estgui.label_output": "输出",
-      "gui.cobblestone.estgui.label_input": "输入"
+      "gui.cobblestone.estgui.label_input": "输入",
+      "cobblestone.configuration.max_pipeline_energy": "导线最大存储电力",
+      "cobblestone.configuration.max_stone_energy": "机器最大存储电力",
+      "cobblestone.configuration.max_energy": "最大能源",
+      "block.cobblestone.charging_device": "充能器",
+      "item.cobblestone.quartz_crystal": "石英水晶"
     }
   },
   "metadata": {
@@ -1666,6 +1750,7 @@
       "src/main/java/net/mcreator/cobblestone/init/CobblestoneModMenus.java",
       "src/main/java/net/mcreator/cobblestone/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/cobblestone/init/CobblestoneModScreens.java",
+      "src/main/java/net/mcreator/cobblestone/init/CobblestoneModConfigs.java",
       "src/main/java/net/mcreator/cobblestone/init/CobblestoneModBlocks.java",
       "src/main/java/net/mcreator/cobblestone/init/CobblestoneModBlockEntities.java",
       "src/main/java/net/mcreator/cobblestone/init/CobblestoneModItems.java",
@@ -1698,6 +1783,7 @@
     "websiteURL": "https://mcreator.net",
     "license": "MIT License",
     "serverSideOnly": false,
+    "modPicture": "cobblestone_je5_be3",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

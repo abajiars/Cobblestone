@@ -1,0 +1,10 @@
+{
+  "_fv": 85,
+  "_type": "config",
+  "definition": {
+    "file": "Cobblestone",
+    "configType": 0,
+    "config": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"config_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"config_category\"><field name=\"name\">MaxEnergy</field><statement name=\"write\"><block type=\"config_variable\"><field name=\"name\">max_stone_energy</field><field name=\"comment\">Max Machine's Energy</field><value name=\"value\"><block type=\"config_number_variable\"><field name=\"name\">max_stone_energy</field><field name=\"value\">20000</field></block></value><next><block type=\"config_variable\"><field name=\"name\">max_pipeline_energy</field><field name=\"comment\">Max Pipeline's Energy</field><value name=\"value\"><block type=\"config_number_variable\"><field name=\"name\">max_pipeline_energy</field><field name=\"value\">1000</field></block></value></block></next></block></statement></block></next></block></xml>",
+    "defining": true
+  }
+}
