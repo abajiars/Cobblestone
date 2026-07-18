@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "cobblestone:thermal_power_generator",
+    "cobblestone:stone_heater"
+  ]
+}

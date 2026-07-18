@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,is_working=true": {
+      "model": "cobblestone:block/monitor_0"
+    },
+    "facing=north,is_working=false": {
+      "model": "cobblestone:block/monitor"
+    },
+    "facing=east,is_working=true": {
+      "model": "cobblestone:block/monitor_0",
+      "y": 90
+    },
+    "facing=east,is_working=false": {
+      "model": "cobblestone:block/monitor",
+      "y": 90
+    },
+    "facing=south,is_working=true": {
+      "model": "cobblestone:block/monitor_0",
+      "y": 180
+    },
+    "facing=south,is_working=false": {
+      "model": "cobblestone:block/monitor",
+      "y": 180
+    },
+    "facing=west,is_working=true": {
+      "model": "cobblestone:block/monitor_0",
+      "y": 270
+    },
+    "facing=west,is_working=false": {
+      "model": "cobblestone:block/monitor",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "cobblestone:iron_stick"
+    },
+    "b": {
+      "item": "cobblestone:mechanical_housing"
+    },
+    "c": {
+      "item": "cobblestone:battery"
+    }
+  },
+  "result": {
+    "id": "cobblestone:charging_device",
+    "count": 1
+  }
+}

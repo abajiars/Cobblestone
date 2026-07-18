@@ -1601,6 +1601,326 @@
           "src/main/resources/assets/cobblestone/models/item/quartz_crystal.json"
         ]
       }
+    },
+    {
+      "name": "QuartzLED",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_led",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/quartz_led.json",
+          "src/main/java/net/mcreator/cobblestone/item/QuartzLEDItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftQuartzLED",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_quartz_led",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_quartz_led.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "OriginalSubstrate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "original_substrate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/original_substrate.json",
+          "src/main/java/net/mcreator/cobblestone/item/OriginalSubstrateItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftOriginalSubstrate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_original_substrate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_original_substrate.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "Monitor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/block/entity/MonitorBlockEntity.java",
+          "src/main/resources/data/cobblestone/loot_table/blocks/monitor.json",
+          "src/main/resources/assets/cobblestone/models/block/monitor.json",
+          "src/main/resources/assets/cobblestone/models/block/monitor_0.json",
+          "src/main/resources/assets/cobblestone/blockstates/monitor.json",
+          "src/main/resources/assets/cobblestone/models/item/monitor.json",
+          "src/main/java/net/mcreator/cobblestone/block/MonitorBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "MonitorText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_text",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/MonitorTextProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MOnSprite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_sprite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/MOnSpriteProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MonitorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/client/gui/MonitorGUIScreen.java",
+          "src/main/java/net/mcreator/cobblestone/world/inventory/MonitorGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "MonitorEnergy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_energy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/MonitorEnergyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MonitorInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_information",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/MonitorInformationProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MonitorProgress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_progress",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/MonitorProgressProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MonitorP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monitor_p",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/MonitorPProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DisplayScreen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/DisplayScreenItem.java",
+          "src/main/resources/assets/cobblestone/models/item/display_screen.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftDisplayScreen",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_display_screen",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_display_screen.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftMonitor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_monitor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_monitor.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftChargingDevice",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_charging_device",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_charging_device.json"
+        ]
+      },
+      "path": "~/repice"
     }
   ],
   "variable_elements": [
@@ -1626,8 +1946,12 @@
       "~CUSTOM:Battery",
       "~CUSTOM:Wrench"
     ],
-    "BLOCKS:mod:cant_powered": [
-      "CUSTOM:ThermalPowerGenerator"
+    "BLOCKS:c:cobblestone/generator": [
+      "CUSTOM:ThermalPowerGenerator",
+      "CUSTOM:StoneHeater"
+    ],
+    "ITEMS:c:led": [
+      "CUSTOM:QuartzLED"
     ]
   },
   "tab_element_order": {
@@ -1653,8 +1977,10 @@
       "EnergyStrongeTank",
       "ElectricHammerMachine",
       "ChargingDevice",
+      "Monitor",
       "Pipeline",
-      "Battery"
+      "Battery",
+      "DisplayScreen"
     ]
   },
   "language_map": {
@@ -1699,7 +2025,12 @@
       "cobblestone.configuration.max_stone_energy": "max_stone_energy",
       "cobblestone.configuration.max_energy": "MaxEnergy",
       "block.cobblestone.charging_device": "Charging Device",
-      "item.cobblestone.quartz_crystal": "Quartz Crystal"
+      "item.cobblestone.quartz_crystal": "Quartz Crystal",
+      "item.cobblestone.quartz_led": "Quartz LED",
+      "item.cobblestone.original_substrate": "Original Substrate",
+      "block.cobblestone.monitor": "Monitor",
+      "block.cobblestone.monitor.description_0": "监测底部机器状态。",
+      "item.cobblestone.display_screen": "Display Screen"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -1742,7 +2073,12 @@
       "cobblestone.configuration.max_stone_energy": "机器最大存储电力",
       "cobblestone.configuration.max_energy": "最大能源",
       "block.cobblestone.charging_device": "充能器",
-      "item.cobblestone.quartz_crystal": "石英水晶"
+      "item.cobblestone.quartz_crystal": "石英水晶",
+      "item.cobblestone.quartz_led": "石英发光二极管",
+      "item.cobblestone.original_substrate": "原始基板",
+      "block.cobblestone.monitor": "监视器",
+      "block.cobblestone.monitor.description_0": "监测底部机器状态。",
+      "item.cobblestone.display_screen": "Display Screen"
     }
   },
   "metadata": {

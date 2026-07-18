@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "cobblestone:quartz_crystal"
+    },
+    "b": {
+      "item": "cobblestone:iron_stick"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "id": "cobblestone:quartz_led",
+    "count": 1
+  }
+}

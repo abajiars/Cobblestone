@@ -8,11 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.cobblestone.client.gui.StoneMakingMachineGUIScreen;
-import net.mcreator.cobblestone.client.gui.StoneHeaterGUIScreen;
-import net.mcreator.cobblestone.client.gui.HammerMachineGUIScreen;
-import net.mcreator.cobblestone.client.gui.ESTGUIScreen;
-import net.mcreator.cobblestone.client.gui.ChargingDeviceGUIScreen;
+import net.mcreator.cobblestone.client.gui.*;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class CobblestoneModScreens {
@@ -23,6 +19,7 @@ public class CobblestoneModScreens {
 		event.register(CobblestoneModMenus.STONE_MAKING_MACHINE_GUI.get(), StoneMakingMachineGUIScreen::new);
 		event.register(CobblestoneModMenus.ESTGUI.get(), ESTGUIScreen::new);
 		event.register(CobblestoneModMenus.CHARGING_DEVICE_GUI.get(), ChargingDeviceGUIScreen::new);
+		event.register(CobblestoneModMenus.MONITOR_GUI.get(), MonitorGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:led"
+    },
+    "b": {
+      "item": "cobblestone:original_substrate"
+    }
+  },
+  "result": {
+    "id": "cobblestone:display_screen",
+    "count": 1
+  }
+}

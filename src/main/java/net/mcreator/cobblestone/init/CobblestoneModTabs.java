@@ -44,8 +44,10 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModBlocks.ENERGY_STRONGE_TANK.get().asItem());
 				tabData.accept(CobblestoneModBlocks.ELECTRIC_HAMMER_MACHINE.get().asItem());
 				tabData.accept(CobblestoneModBlocks.CHARGING_DEVICE.get().asItem());
+				tabData.accept(CobblestoneModBlocks.MONITOR.get().asItem());
 				tabData.accept(CobblestoneModBlocks.PIPELINE.get().asItem());
 				tabData.accept(CobblestoneModItems.BATTERY.get());
+				tabData.accept(CobblestoneModItems.DISPLAY_SCREEN.get());
 			}).build());
 
 	@SubscribeEvent

@@ -39,5 +39,10 @@
   "cobblestone.configuration.max_stone_energy": "max_stone_energy",
   "cobblestone.configuration.max_energy": "MaxEnergy",
   "block.cobblestone.charging_device": "Charging Device",
-  "item.cobblestone.quartz_crystal": "Quartz Crystal"
+  "item.cobblestone.quartz_crystal": "Quartz Crystal",
+  "item.cobblestone.quartz_led": "Quartz LED",
+  "item.cobblestone.original_substrate": "Original Substrate",
+  "block.cobblestone.monitor": "Monitor",
+  "block.cobblestone.monitor.description_0": "监测底部机器状态。",
+  "item.cobblestone.display_screen": "Display Screen"
 }

@@ -39,5 +39,10 @@
   "cobblestone.configuration.max_stone_energy": "机器最大存储电力",
   "cobblestone.configuration.max_energy": "最大能源",
   "block.cobblestone.charging_device": "充能器",
-  "item.cobblestone.quartz_crystal": "石英水晶"
+  "item.cobblestone.quartz_crystal": "石英水晶",
+  "item.cobblestone.quartz_led": "石英发光二极管",
+  "item.cobblestone.original_substrate": "原始基板",
+  "block.cobblestone.monitor": "监视器",
+  "block.cobblestone.monitor.description_0": "监测底部机器状态。",
+  "item.cobblestone.display_screen": "Display Screen"
 }

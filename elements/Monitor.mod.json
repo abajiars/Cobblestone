@@ -5,12 +5,12 @@
     "texture": "machine_side",
     "textureTop": "machine_side",
     "textureLeft": "machine_side",
-    "textureFront": "charging_device",
+    "textureFront": "monitor",
     "textureRight": "machine_side",
     "textureBack": "machine_side",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -19,7 +19,7 @@
         "texture": "machine_side",
         "textureTop": "machine_side",
         "textureLeft": "machine_side",
-        "textureFront": "working_charging_device_",
+        "textureFront": "working_monitor",
         "textureRight": "machine_side",
         "textureBack": "machine_side",
         "renderType": 10,
@@ -77,9 +77,11 @@
         "value": false
       }
     ],
-    "name": "Charging Device",
+    "name": "Monitor",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "监测底部机器状态。"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,
@@ -165,10 +167,10 @@
       "fixedValue": 7.0
     },
     "hasInventory": true,
-    "guiBoundTo": "ChargingDeviceGUI",
+    "guiBoundTo": "MonitorGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 2,
-    "inventoryStackSize": 64,
+    "inventorySize": 0,
+    "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -181,11 +183,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "SetStoneEnergy"
-    },
     "onTickUpdate": {
-      "name": "ChargingItem"
+      "name": "MonitorP"
     },
     "onStartToDestroy": {
       "name": "WrenchDestroyMachine"

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "cobblestone:quartz_led"
+    },
+    "b": {
+      "item": "cobblestone:display_screen"
+    },
+    "c": {
+      "item": "cobblestone:mechanical_housing"
+    }
+  },
+  "result": {
+    "id": "cobblestone:monitor",
+    "count": 1
+  }
+}

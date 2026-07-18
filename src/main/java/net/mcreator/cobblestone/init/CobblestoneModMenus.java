@@ -15,11 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.cobblestone.world.inventory.StoneMakingMachineGUIMenu;
-import net.mcreator.cobblestone.world.inventory.StoneHeaterGUIMenu;
-import net.mcreator.cobblestone.world.inventory.HammerMachineGUIMenu;
-import net.mcreator.cobblestone.world.inventory.ESTGUIMenu;
-import net.mcreator.cobblestone.world.inventory.ChargingDeviceGUIMenu;
+import net.mcreator.cobblestone.world.inventory.*;
 import net.mcreator.cobblestone.network.MenuStateUpdateMessage;
 import net.mcreator.cobblestone.CobblestoneMod;
 
@@ -32,6 +28,7 @@ public class CobblestoneModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<StoneMakingMachineGUIMenu>> STONE_MAKING_MACHINE_GUI = REGISTRY.register("stone_making_machine_gui", () -> IMenuTypeExtension.create(StoneMakingMachineGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ESTGUIMenu>> ESTGUI = REGISTRY.register("estgui", () -> IMenuTypeExtension.create(ESTGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ChargingDeviceGUIMenu>> CHARGING_DEVICE_GUI = REGISTRY.register("charging_device_gui", () -> IMenuTypeExtension.create(ChargingDeviceGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MonitorGUIMenu>> MONITOR_GUI = REGISTRY.register("monitor_gui", () -> IMenuTypeExtension.create(MonitorGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
