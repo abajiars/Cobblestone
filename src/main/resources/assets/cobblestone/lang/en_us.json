@@ -44,5 +44,11 @@
   "item.cobblestone.original_substrate": "Original Substrate",
   "block.cobblestone.monitor": "Monitor",
   "block.cobblestone.monitor.description_0": "监测底部机器状态。",
-  "item.cobblestone.display_screen": "Display Screen"
+  "item.cobblestone.display_screen": "Display Screen",
+  "gui.cobblestone.monitor.detection": "No machine at the bottom.",
+  "gui.cobblestone.monitor.status1": "The machine was forced to stop running.",
+  "gui.cobblestone.monitor.status2": "The machine is running.",
+  "gui.cobblestone.monitor.status3": "The machine is not running.",
+  "gui.cobblestone.monitor.status4": "The storage tank has electricity.",
+  "gui.cobblestone.progress": "Progress:"
 }

@@ -4,7 +4,7 @@ license="MIT License"
 
 [[mods]]
 modId="cobblestone"
-version="1.0.0-alpha"
+version="1.0.2-indev"
 displayName="Cobblestone"
 displayURL="https://mcreator.net"
 logoFile="logo.png"

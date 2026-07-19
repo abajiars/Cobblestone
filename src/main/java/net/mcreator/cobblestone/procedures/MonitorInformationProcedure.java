@@ -2,6 +2,7 @@ package net.mcreator.cobblestone.procedures;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
@@ -11,13 +12,13 @@ public class MonitorInformationProcedure {
 			if ((world.getBlockEntity(BlockPos.containing((int) x, (int) (y - 1), (int) z)) instanceof BlockEntity _blockEnt2 ? _blockEnt2.getPersistentData() : new CompoundTag()).contains("second")) {
 				if (getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "second") > 0) {
 					if (getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "StoneEnergy") <= 20) {
-						return "\u673A\u5668\u88AB\u8FEB\u505C\u6B62\u5DE5\u4F5C";
+						return Component.translatable("gui.cobblestone.monitor.status1").getString();
 					}
-					return "\u673A\u5668\u6B63\u5728\u5DE5\u4F5C";
+					return Component.translatable("gui.cobblestone.monitor.status2").getString();
 				}
-				return "\u673A\u5668\u672A\u5DE5\u4F5C";
+				return Component.translatable("gui.cobblestone.monitor.status3").getString();
 			}
-			return "\u50A8\u7F50\u6709\u7535";
+			return Component.translatable("gui.cobblestone.monitor.status4").getString();
 		}
 		return "";
 	}

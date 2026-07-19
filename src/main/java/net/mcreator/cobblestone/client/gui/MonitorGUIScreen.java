@@ -34,8 +34,8 @@ public class MonitorGUIScreen extends AbstractContainerScreen<MonitorGUIMenu> im
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 250;
+		this.imageHeight = 171;
 	}
 
 	@Override
@@ -56,7 +56,7 @@ public class MonitorGUIScreen extends AbstractContainerScreen<MonitorGUIMenu> im
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(SPRITE_0, this.leftPos + 7, this.topPos + 48, Mth.clamp((int) MOnSpriteProcedure.execute(world, x, y, z) * 32, 0, 384), 0, 32, 64, 416, 64);
+		guiGraphics.blit(SPRITE_0, this.leftPos + 16, this.topPos + 52, Mth.clamp((int) MOnSpriteProcedure.execute(world, x, y, z) * 32, 0, 384), 0, 32, 64, 416, 64);
 		RenderSystem.disableBlend();
 	}
 
@@ -71,10 +71,10 @@ public class MonitorGUIScreen extends AbstractContainerScreen<MonitorGUIMenu> im
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, MonitorTextProcedure.execute(world, x, y, z), 5, 39, -12829636, false);
-		guiGraphics.drawString(this.font, MonitorEnergyProcedure.execute(world, x, y, z), 7, 113, -12829636, false);
-		guiGraphics.drawString(this.font, MonitorInformationProcedure.execute(world, x, y, z), 41, 53, -12829636, false);
-		guiGraphics.drawString(this.font, MonitorProgressProcedure.execute(world, x, y, z), 42, 67, -12829636, false);
+		guiGraphics.drawString(this.font, MonitorTextProcedure.execute(world, x, y, z), 17, 42, -12829636, false);
+		guiGraphics.drawString(this.font, MonitorEnergyProcedure.execute(world, x, y, z), 11, 118, -12829636, false);
+		guiGraphics.drawString(this.font, MonitorInformationProcedure.execute(world, x, y, z), 55, 57, -12829636, false);
+		guiGraphics.drawString(this.font, MonitorProgressProcedure.execute(world, x, y, z), 55, 77, -12829636, false);
 	}
 
 	@Override

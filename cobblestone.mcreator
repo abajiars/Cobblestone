@@ -2030,7 +2030,13 @@
       "item.cobblestone.original_substrate": "Original Substrate",
       "block.cobblestone.monitor": "Monitor",
       "block.cobblestone.monitor.description_0": "监测底部机器状态。",
-      "item.cobblestone.display_screen": "Display Screen"
+      "item.cobblestone.display_screen": "Display Screen",
+      "gui.cobblestone.monitor.detection": "No machine at the bottom.",
+      "gui.cobblestone.monitor.status1": "The machine was forced to stop running.",
+      "gui.cobblestone.monitor.status2": "The machine is running.",
+      "gui.cobblestone.monitor.status3": "The machine is not running.",
+      "gui.cobblestone.monitor.status4": "The storage tank has electricity.",
+      "gui.cobblestone.progress": "Progress:"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2078,7 +2084,13 @@
       "item.cobblestone.original_substrate": "原始基板",
       "block.cobblestone.monitor": "监视器",
       "block.cobblestone.monitor.description_0": "监测底部机器状态。",
-      "item.cobblestone.display_screen": "Display Screen"
+      "item.cobblestone.display_screen": "显示屏",
+      "gui.cobblestone.monitor.detection": "底部无机器。",
+      "gui.cobblestone.monitor.status2": "机器正在运行。",
+      "gui.cobblestone.monitor.status1": "机器被迫停止运行。",
+      "gui.cobblestone.monitor.status3": "机器未在运行。",
+      "gui.cobblestone.monitor.status4": "储罐有电。",
+      "gui.cobblestone.progress": "进度："
     }
   },
   "metadata": {
@@ -2113,7 +2125,7 @@
   "workspaceSettings": {
     "modid": "cobblestone",
     "modName": "Cobblestone",
-    "version": "1.0.0-alpha",
+    "version": "1.0.2-indev",
     "description": "Cobblestone give birth to all things.",
     "author": "MCreator,abajiar",
     "websiteURL": "https://mcreator.net",
