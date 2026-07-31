@@ -337,6 +337,7 @@
       "registry_name": "sleve",
       "metadata": {
         "files": [
+          "src/main/resources/assets/cobblestone/models/block/sleve_1.json",
           "src/main/resources/assets/cobblestone/models/block/sleve_0.json",
           "src/main/resources/assets/cobblestone/models/block/sleve.json",
           "src/main/java/net/mcreator/cobblestone/block/entity/SleveBlockEntity.java",
@@ -1973,6 +1974,118 @@
         ]
       },
       "path": "~/repice"
+    },
+    {
+      "name": "IronScreen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_screen",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/iron_screen.json",
+          "src/main/java/net/mcreator/cobblestone/item/IronScreenItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftIronScreen",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_iron_screen",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_iron_screen.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "SolarPanel",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_panel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/solar_panel.json",
+          "src/main/java/net/mcreator/cobblestone/item/SolarPanelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftSolarPanel",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_solar_panel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_solar_panel.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "SolarGenerator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_generator",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/loot_table/blocks/solar_generator.json",
+          "src/main/java/net/mcreator/cobblestone/block/SolarGeneratorBlock.java",
+          "src/main/resources/assets/cobblestone/blockstates/solar_generator.json",
+          "src/main/resources/assets/cobblestone/models/block/solar_generator.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/SolarGeneratorBlockEntity.java",
+          "src/main/resources/assets/cobblestone/models/item/solar_generator.json"
+        ]
+      }
+    },
+    {
+      "name": "SolarGenerate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_generate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SolarGenerateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftSolarGenerator",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_solar_generator",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_solar_generator.json"
+        ]
+      },
+      "path": "~/repice"
     }
   ],
   "variable_elements": [
@@ -2032,7 +2145,9 @@
       "Monitor",
       "Pipeline",
       "Battery",
-      "DisplayScreen"
+      "DisplayScreen",
+      "Resistor",
+      "OriginalCircuitBoard"
     ]
   },
   "language_map": {
@@ -2090,7 +2205,10 @@
       "gui.cobblestone.monitor.status4": "The storage tank has electricity.",
       "gui.cobblestone.progress": "Progress:",
       "item.cobblestone.resistor": "Resistor",
-      "item.cobblestone.original_circuit_board": "Original Circuit Board"
+      "item.cobblestone.original_circuit_board": "Original Circuit Board",
+      "item.cobblestone.iron_screen": "Iron Screen",
+      "item.cobblestone.solar_panel": "Solar Panel",
+      "block.cobblestone.solar_generator": "Solar Generator"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2145,8 +2263,11 @@
       "gui.cobblestone.monitor.status3": "机器未在运行。",
       "gui.cobblestone.monitor.status4": "储罐有电。",
       "gui.cobblestone.progress": "进度：",
-      "item.cobblestone.resistor": "Resistor",
-      "item.cobblestone.original_circuit_board": "Original Circuit Board"
+      "item.cobblestone.resistor": "电阻",
+      "item.cobblestone.original_circuit_board": "原始电路板",
+      "item.cobblestone.iron_screen": "Iron Screen",
+      "item.cobblestone.solar_panel": "Solar Panel",
+      "block.cobblestone.solar_generator": "Solar Generator"
     }
   },
   "metadata": {

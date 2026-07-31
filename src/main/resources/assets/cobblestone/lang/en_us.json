@@ -52,5 +52,8 @@
   "gui.cobblestone.monitor.status4": "The storage tank has electricity.",
   "gui.cobblestone.progress": "Progress:",
   "item.cobblestone.resistor": "Resistor",
-  "item.cobblestone.original_circuit_board": "Original Circuit Board"
+  "item.cobblestone.original_circuit_board": "Original Circuit Board",
+  "item.cobblestone.iron_screen": "Iron Screen",
+  "item.cobblestone.solar_panel": "Solar Panel",
+  "block.cobblestone.solar_generator": "Solar Generator"
 }

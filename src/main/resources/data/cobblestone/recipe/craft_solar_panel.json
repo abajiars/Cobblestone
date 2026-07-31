@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
     "aba",
-    "aca"
+    "bcb",
+    "aba"
   ],
   "key": {
     "a": {
-      "tag": "c:led"
+      "item": "cobblestone:iron_stick"
     },
     "b": {
-      "item": "cobblestone:original_substrate"
+      "item": "minecraft:iron_ingot"
     },
     "c": {
-      "item": "cobblestone:battery"
+      "item": "minecraft:lapis_block"
     }
   },
   "result": {
-    "id": "cobblestone:display_screen",
+    "id": "cobblestone:solar_panel",
     "count": 1
   }
 }

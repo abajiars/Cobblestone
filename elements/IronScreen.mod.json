@@ -3,19 +3,15 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "resistor",
+    "texture": "iron_screen",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Resistor",
+    "name": "Iron Screen",
     "rarity": "COMMON",
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Cobblestones"
-      }
-    ],
+    "creativeTabs": [],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

@@ -47,6 +47,9 @@ public class CobblestoneModItems {
 	public static final DeferredItem<Item> DISPLAY_SCREEN;
 	public static final DeferredItem<Item> RESISTOR;
 	public static final DeferredItem<Item> ORIGINAL_CIRCUIT_BOARD;
+	public static final DeferredItem<Item> IRON_SCREEN;
+	public static final DeferredItem<Item> SOLAR_PANEL;
+	public static final DeferredItem<Item> SOLAR_GENERATOR;
 	static {
 		HAMMER = REGISTRY.register("hammer", HammerItem::new);
 		STONE_STICK = REGISTRY.register("stone_stick", StoneStickItem::new);
@@ -79,6 +82,9 @@ public class CobblestoneModItems {
 		DISPLAY_SCREEN = REGISTRY.register("display_screen", DisplayScreenItem::new);
 		RESISTOR = REGISTRY.register("resistor", ResistorItem::new);
 		ORIGINAL_CIRCUIT_BOARD = REGISTRY.register("original_circuit_board", OriginalCircuitBoardItem::new);
+		IRON_SCREEN = REGISTRY.register("iron_screen", IronScreenItem::new);
+		SOLAR_PANEL = REGISTRY.register("solar_panel", SolarPanelItem::new);
+		SOLAR_GENERATOR = block(CobblestoneModBlocks.SOLAR_GENERATOR);
 	}
 
 	// Start of user code block custom items

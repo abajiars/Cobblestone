@@ -13,37 +13,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:OriginalSubstrate"
+        "value": "Blocks.LAPIS_BLOCK"
       },
       {
-        "value": "TAG:c:led"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "CUSTOM:Battery"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DisplayScreen"
+      "value": "CUSTOM:SolarPanel"
     },
-    "name": "craft_display_screen",
+    "name": "craft_solar_panel",
     "namespace": "mod"
   }
 }

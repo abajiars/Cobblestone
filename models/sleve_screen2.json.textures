@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "1": "texture",
+        "3": "screen2",
+        "4": "sleve_3",
+        "5": "sleve_2"
+      }
+    }
+  }
+}

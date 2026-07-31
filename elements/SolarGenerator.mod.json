@@ -2,88 +2,19 @@
   "_fv": 85,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:big_dripleaf_side",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 2,
-    "customModelName": "sleve:default",
-    "rotationMode": 0,
+    "texture": "machine_side",
+    "textureTop": "solar_panel",
+    "textureLeft": "machine_side",
+    "textureFront": "machine_side",
+    "textureRight": "machine_side",
+    "textureBack": "machine_side",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "states": [
-      {
-        "texture": "minecraft:big_dripleaf_side",
-        "textureTop": "",
-        "textureLeft": "",
-        "textureFront": "",
-        "textureRight": "",
-        "textureBack": "",
-        "renderType": 2,
-        "customModelName": "sleve_screen:default",
-        "particleTexture": "",
-        "hasCustomBoundingBox": false,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 16.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ],
-        "stateMap": [
-          {
-            "property": {
-              "min": 0,
-              "max": 2,
-              "name": "CUSTOM:screen",
-              "type": "integer"
-            },
-            "value": 1
-          }
-        ]
-      },
-      {
-        "texture": "minecraft:big_dripleaf_side",
-        "textureTop": "",
-        "textureLeft": "",
-        "textureFront": "",
-        "textureRight": "",
-        "textureBack": "",
-        "renderType": 2,
-        "customModelName": "sleve_screen2:default",
-        "particleTexture": "",
-        "hasCustomBoundingBox": false,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 16.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ],
-        "stateMap": [
-          {
-            "property": {
-              "min": 0,
-              "max": 2,
-              "name": "CUSTOM:screen",
-              "type": "integer"
-            },
-            "value": 2
-          }
-        ]
-      }
-    ],
+    "states": [],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
@@ -91,7 +22,7 @@
     "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -101,37 +32,25 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 12.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "customProperties": [
-      {
-        "min": 0,
-        "max": 2,
-        "name": "CUSTOM:screen",
-        "type": "integer",
-        "value": 0
-      }
-    ],
-    "name": "Sleve",
+    "customProperties": [],
+    "name": "Solar Generator",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 2.0,
-    "resistance": 6.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Cobblestones"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -144,8 +63,8 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "hasCustomOpacity": true,
-    "lightOpacity": 0,
+    "hasCustomOpacity": false,
+    "lightOpacity": 15,
     "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
@@ -174,7 +93,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -204,7 +123,7 @@
     },
     "hasInventory": true,
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 0,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -218,17 +137,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "Setscreen"
-    },
     "onBlockAdded": {
-      "name": "SetSecond"
+      "name": "SetStoneEnergy"
     },
     "onTickUpdate": {
-      "name": "SieveItem"
+      "name": "SolarGenerate"
     },
-    "onDestroyedByPlayer": {
-      "name": "ReturnScreen"
+    "onStartToDestroy": {
+      "name": "WrenchDestroyMachine"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

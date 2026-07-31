@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "cobblestone:solar_panel"
+    },
+    "b": {
+      "item": "cobblestone:mechanical_housing"
+    },
+    "c": {
+      "item": "cobblestone:original_circuit_board"
+    }
+  },
+  "result": {
+    "id": "cobblestone:solar_generator",
+    "count": 1
+  }
+}

@@ -11,7 +11,11 @@
     "animations": [],
     "name": "Original Circuit Board",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Cobblestones"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

@@ -13,37 +13,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "CUSTOM:OriginalSubstrate"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "CUSTOM:Battery"
+        "value": "CUSTOM:IronStick"
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:IronStick"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DisplayScreen"
+      "value": "CUSTOM:IronScreen"
     },
-    "name": "craft_display_screen",
+    "name": "craft_iron_screen",
     "namespace": "mod"
   }
 }

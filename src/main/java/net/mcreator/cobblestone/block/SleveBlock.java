@@ -32,7 +32,7 @@ import net.mcreator.cobblestone.procedures.ReturnScreenProcedure;
 import net.mcreator.cobblestone.block.entity.SleveBlockEntity;
 
 public class SleveBlock extends Block implements EntityBlock {
-	public static final IntegerProperty SCREEN = IntegerProperty.create("screen", 0, 1);
+	public static final IntegerProperty SCREEN = IntegerProperty.create("screen", 0, 2);
 	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 12, 16);
 
 	public SleveBlock() {

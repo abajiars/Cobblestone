@@ -48,6 +48,8 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModBlocks.PIPELINE.get().asItem());
 				tabData.accept(CobblestoneModItems.BATTERY.get());
 				tabData.accept(CobblestoneModItems.DISPLAY_SCREEN.get());
+				tabData.accept(CobblestoneModItems.RESISTOR.get());
+				tabData.accept(CobblestoneModItems.ORIGINAL_CIRCUIT_BOARD.get());
 			}).build());
 
 	@SubscribeEvent

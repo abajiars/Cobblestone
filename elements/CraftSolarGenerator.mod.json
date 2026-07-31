@@ -13,37 +13,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:c:led"
+        "value": ""
       },
       {
-        "value": "TAG:c:led"
+        "value": "CUSTOM:SolarPanel"
       },
       {
-        "value": "TAG:c:led"
+        "value": ""
       },
       {
-        "value": "TAG:c:led"
+        "value": ""
       },
       {
-        "value": "CUSTOM:OriginalSubstrate"
+        "value": "CUSTOM:MechanicalHousing"
       },
       {
-        "value": "TAG:c:led"
+        "value": ""
       },
       {
-        "value": "TAG:c:led"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Battery"
+        "value": "CUSTOM:OriginalCircuitBoard"
       },
       {
-        "value": "TAG:c:led"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DisplayScreen"
+      "value": "CUSTOM:SolarGenerator"
     },
-    "name": "craft_display_screen",
+    "name": "craft_solar_generator",
     "namespace": "mod"
   }
 }

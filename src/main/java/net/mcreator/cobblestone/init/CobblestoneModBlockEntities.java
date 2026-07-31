@@ -35,6 +35,7 @@ public class CobblestoneModBlockEntities {
 			ElectricHammerMachineBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ChargingDeviceBlockEntity>> CHARGING_DEVICE = register("charging_device", CobblestoneModBlocks.CHARGING_DEVICE, ChargingDeviceBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MonitorBlockEntity>> MONITOR = register("monitor", CobblestoneModBlocks.MONITOR, MonitorBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SolarGeneratorBlockEntity>> SOLAR_GENERATOR = register("solar_generator", CobblestoneModBlocks.SOLAR_GENERATOR, SolarGeneratorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -55,5 +56,6 @@ public class CobblestoneModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ELECTRIC_HAMMER_MACHINE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CHARGING_DEVICE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MONITOR.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SOLAR_GENERATOR.get(), SidedInvWrapper::new);
 	}
 }
