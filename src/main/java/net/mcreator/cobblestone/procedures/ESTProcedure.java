@@ -77,15 +77,15 @@ public class ESTProcedure {
 				}
 			}
 		}
-		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") <= getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MaxStoneEnergy") - 8) {
-			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.SOLAR_PANEL.get() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world instanceof Level _lvl25
-					&& _lvl25.isDay()) {
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") <= getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MaxStoneEnergy") - (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() * 8) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.SOLAR_PANEL.get() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world instanceof Level _lvl27
+					&& _lvl27.isDay()) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null) {
-						_blockEntity.getPersistentData().putDouble("StoneEnergy", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") + 8));
+						_blockEntity.getPersistentData().putDouble("StoneEnergy", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") + (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() * 8));
 					}
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
