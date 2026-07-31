@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "cobblestone:coal_powder"
+    },
+    "b": {
+      "item": "cobblestone:pipeline"
+    },
+    "c": {
+      "tag": "minecraft:terracotta"
+    },
+    "d": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "id": "cobblestone:resistor",
+    "count": 2
+  }
+}

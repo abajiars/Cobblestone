@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "tag": "c:led"
+    },
+    "b": {
+      "item": "minecraft:copper_ingot"
+    },
+    "c": {
+      "item": "cobblestone:resistor"
+    },
+    "d": {
+      "item": "cobblestone:original_substrate"
+    },
+    "e": {
+      "item": "cobblestone:pipeline"
+    }
+  },
+  "result": {
+    "id": "cobblestone:original_circuit_board",
+    "count": 1
+  }
+}

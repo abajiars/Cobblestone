@@ -45,6 +45,8 @@ public class CobblestoneModItems {
 	public static final DeferredItem<Item> ORIGINAL_SUBSTRATE;
 	public static final DeferredItem<Item> MONITOR;
 	public static final DeferredItem<Item> DISPLAY_SCREEN;
+	public static final DeferredItem<Item> RESISTOR;
+	public static final DeferredItem<Item> ORIGINAL_CIRCUIT_BOARD;
 	static {
 		HAMMER = REGISTRY.register("hammer", HammerItem::new);
 		STONE_STICK = REGISTRY.register("stone_stick", StoneStickItem::new);
@@ -75,6 +77,8 @@ public class CobblestoneModItems {
 		ORIGINAL_SUBSTRATE = REGISTRY.register("original_substrate", OriginalSubstrateItem::new);
 		MONITOR = block(CobblestoneModBlocks.MONITOR);
 		DISPLAY_SCREEN = REGISTRY.register("display_screen", DisplayScreenItem::new);
+		RESISTOR = REGISTRY.register("resistor", ResistorItem::new);
+		ORIGINAL_CIRCUIT_BOARD = REGISTRY.register("original_circuit_board", OriginalCircuitBoardItem::new);
 	}
 
 	// Start of user code block custom items

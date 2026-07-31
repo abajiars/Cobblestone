@@ -50,5 +50,7 @@
   "gui.cobblestone.monitor.status1": "机器被迫停止运行。",
   "gui.cobblestone.monitor.status3": "机器未在运行。",
   "gui.cobblestone.monitor.status4": "储罐有电。",
-  "gui.cobblestone.progress": "进度："
+  "gui.cobblestone.progress": "进度：",
+  "item.cobblestone.resistor": "Resistor",
+  "item.cobblestone.original_circuit_board": "Original Circuit Board"
 }

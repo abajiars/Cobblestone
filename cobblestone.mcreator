@@ -1921,6 +1921,58 @@
         ]
       },
       "path": "~/repice"
+    },
+    {
+      "name": "Resistor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resistor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/ResistorItem.java",
+          "src/main/resources/assets/cobblestone/models/item/resistor.json"
+        ]
+      }
+    },
+    {
+      "name": "OriginalCircuitBoard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "original_circuit_board",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/original_circuit_board.json",
+          "src/main/java/net/mcreator/cobblestone/item/OriginalCircuitBoardItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftResistor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_resistor",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_resistor.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "CraftOCB",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_ocb",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_ocb.json"
+        ]
+      },
+      "path": "~/repice"
     }
   ],
   "variable_elements": [
@@ -2036,7 +2088,9 @@
       "gui.cobblestone.monitor.status2": "The machine is running.",
       "gui.cobblestone.monitor.status3": "The machine is not running.",
       "gui.cobblestone.monitor.status4": "The storage tank has electricity.",
-      "gui.cobblestone.progress": "Progress:"
+      "gui.cobblestone.progress": "Progress:",
+      "item.cobblestone.resistor": "Resistor",
+      "item.cobblestone.original_circuit_board": "Original Circuit Board"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2090,7 +2144,9 @@
       "gui.cobblestone.monitor.status1": "机器被迫停止运行。",
       "gui.cobblestone.monitor.status3": "机器未在运行。",
       "gui.cobblestone.monitor.status4": "储罐有电。",
-      "gui.cobblestone.progress": "进度："
+      "gui.cobblestone.progress": "进度：",
+      "item.cobblestone.resistor": "Resistor",
+      "item.cobblestone.original_circuit_board": "Original Circuit Board"
     }
   },
   "metadata": {
