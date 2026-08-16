@@ -83,8 +83,8 @@
         "监测底部机器状态。"
       ]
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 5.0,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,

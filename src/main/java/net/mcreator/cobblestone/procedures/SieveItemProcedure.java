@@ -54,14 +54,14 @@ public class SieveItemProcedure {
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+					if (Mth.nextInt(RandomSource.create(), 1, 10) == 1 * (getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip16 ? blockstate.getValue(_getip16) : -1)) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.IRON_NUGGET));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
-					if ((getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip17 ? blockstate.getValue(_getip17) : -1) > 1 && Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
+					if ((getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip19 ? blockstate.getValue(_getip19) : -1) > 1 && Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.LAPIS_LAZULI));
 							entityToSpawn.setPickUpDelay(10);
@@ -117,6 +117,13 @@ public class SieveItemProcedure {
 					if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.COPPER_NUGGET.get()));
+							entityToSpawn.setPickUpDelay(10);
+							_level.addFreshEntity(entityToSpawn);
+						}
+					}
+					if ((getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip38 ? blockstate.getValue(_getip38) : -1) > 1 && Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
+						if (world instanceof ServerLevel _level) {
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.GOLD_NUGGET));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}

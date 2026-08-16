@@ -53,7 +53,9 @@
   "gui.cobblestone.progress": "进度：",
   "item.cobblestone.resistor": "电阻",
   "item.cobblestone.original_circuit_board": "原始电路板",
-  "item.cobblestone.iron_screen": "Iron Screen",
-  "item.cobblestone.solar_panel": "Solar Panel",
-  "block.cobblestone.solar_generator": "Solar Generator"
+  "item.cobblestone.iron_screen": "铁筛网",
+  "item.cobblestone.solar_panel": "太阳能板",
+  "block.cobblestone.solar_generator": "太阳能发电机",
+  "block.cobblestone.gold_pipeline": "金导线",
+  "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy"
 }

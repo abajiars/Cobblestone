@@ -2086,6 +2086,22 @@
         ]
       },
       "path": "~/repice"
+    },
+    {
+      "name": "GoldPipeline",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_pipeline",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/block/GoldPipelineBlock.java",
+          "src/main/resources/data/cobblestone/loot_table/blocks/gold_pipeline.json",
+          "src/main/resources/assets/cobblestone/models/block/gold_pipeline.json",
+          "src/main/resources/assets/cobblestone/blockstates/gold_pipeline.json",
+          "src/main/resources/assets/cobblestone/models/item/gold_pipeline.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2117,6 +2133,9 @@
     ],
     "ITEMS:c:led": [
       "CUSTOM:QuartzLED"
+    ],
+    "ITEMS:c:circuit": [
+      "CUSTOM:OriginalCircuitBoard"
     ]
   },
   "tab_element_order": {
@@ -2154,7 +2173,7 @@
     "en_us": {
       "item.cobblestone.hammer": "Hammer",
       "item.cobblestone.stone_stick": "Stone Stick",
-      "item.cobblestone.hammer.description_0": "锤碎一切。",
+      "item.cobblestone.hammer.description_0": "Smash everything.",
       "item.cobblestone.stone_gear": "Stone Gear",
       "item_group.cobblestone.cobblestones": "Cobblestones",
       "block.cobblestone.hammer_machine": "Hammer Machine",
@@ -2196,7 +2215,7 @@
       "item.cobblestone.quartz_led": "Quartz LED",
       "item.cobblestone.original_substrate": "Original Substrate",
       "block.cobblestone.monitor": "Monitor",
-      "block.cobblestone.monitor.description_0": "监测底部机器状态。",
+      "block.cobblestone.monitor.description_0": "Monitoring the status of the bottom machine.",
       "item.cobblestone.display_screen": "Display Screen",
       "gui.cobblestone.monitor.detection": "No machine at the bottom.",
       "gui.cobblestone.monitor.status1": "The machine was forced to stop running.",
@@ -2208,7 +2227,9 @@
       "item.cobblestone.original_circuit_board": "Original Circuit Board",
       "item.cobblestone.iron_screen": "Iron Screen",
       "item.cobblestone.solar_panel": "Solar Panel",
-      "block.cobblestone.solar_generator": "Solar Generator"
+      "block.cobblestone.solar_generator": "Solar Generator",
+      "block.cobblestone.gold_pipeline": "Gold Pipeline",
+      "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2265,9 +2286,11 @@
       "gui.cobblestone.progress": "进度：",
       "item.cobblestone.resistor": "电阻",
       "item.cobblestone.original_circuit_board": "原始电路板",
-      "item.cobblestone.iron_screen": "Iron Screen",
-      "item.cobblestone.solar_panel": "Solar Panel",
-      "block.cobblestone.solar_generator": "Solar Generator"
+      "item.cobblestone.iron_screen": "铁筛网",
+      "item.cobblestone.solar_panel": "太阳能板",
+      "block.cobblestone.solar_generator": "太阳能发电机",
+      "block.cobblestone.gold_pipeline": "金导线",
+      "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy"
     }
   },
   "metadata": {
@@ -2302,7 +2325,7 @@
   "workspaceSettings": {
     "modid": "cobblestone",
     "modName": "Cobblestone",
-    "version": "1.0.2-indev",
+    "version": "1.0.3-indev",
     "description": "Cobblestone give birth to all things.",
     "author": "MCreator,abajiar",
     "websiteURL": "https://mcreator.net",

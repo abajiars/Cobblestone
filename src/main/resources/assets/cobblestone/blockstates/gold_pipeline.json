@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cobblestone:block/gold_pipeline"
+    },
+    "facing=east": {
+      "model": "cobblestone:block/gold_pipeline",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cobblestone:block/gold_pipeline",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cobblestone:block/gold_pipeline",
+      "y": 270
+    }
+  }
+}

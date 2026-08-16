@@ -6,6 +6,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.cobblestone.init.CobblestoneModBlocks;
 import net.mcreator.cobblestone.configuration.SetEnergyConfiguration;
 
 public class SetPipelineEnergyProcedure {
@@ -20,6 +21,18 @@ public class SetPipelineEnergyProcedure {
 			}
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CobblestoneModBlocks.GOLD_PIPELINE.get()) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null) {
+					_blockEntity.getPersistentData().putDouble("MaxStoneEnergy", ((double) SetEnergyConfiguration.MAX_GOLD_PIPELINE_ENERGY.get()));
+				}
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
 		}
 	}
 }

@@ -2,14 +2,14 @@
   "_fv": 85,
   "_type": "block",
   "definition": {
-    "texture": "machine_side",
-    "textureTop": "solar_panel",
-    "textureLeft": "machine_side",
-    "textureFront": "machine_side",
-    "textureRight": "machine_side",
-    "textureBack": "machine_side",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "minecraft:black_candle",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "gold_pipeline:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -22,7 +22,7 @@
     "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -38,12 +38,12 @@
       }
     ],
     "customProperties": [],
-    "name": "Solar Generator",
+    "name": "Gold Pipeline",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 5.0,
-    "resistance": 6.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
@@ -63,9 +63,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "hasCustomOpacity": false,
-    "lightOpacity": 15,
-    "tickRate": 1,
+    "hasCustomOpacity": true,
+    "lightOpacity": 0,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -93,7 +93,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -121,9 +121,9 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": true,
+    "hasInventory": false,
     "openGUIOnRightClick": false,
-    "inventorySize": 0,
+    "inventorySize": 9,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -137,15 +137,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "SetStoneEnergy"
-    },
-    "onTickUpdate": {
-      "name": "SolarGenerate"
-    },
-    "onStartToDestroy": {
-      "name": "WrenchDestroyMachine"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

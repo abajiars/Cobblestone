@@ -36,7 +36,7 @@ public class ChargingDeviceBlock extends Block implements EntityBlock {
 	public static final BooleanProperty IS_WORKING = BooleanProperty.create("is_working");
 
 	public ChargingDeviceBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 6f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(IS_WORKING, false));
 	}
 

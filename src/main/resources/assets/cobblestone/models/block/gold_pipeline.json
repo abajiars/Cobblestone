@@ -1,0 +1,9 @@
+{
+  "parent": "cobblestone:custom/gold_pipeline",
+  "textures": {
+    "all": "minecraft:block/black_candle",
+    "particle": "minecraft:block/black_candle",
+    "1": "cobblestone:block/gp"
+  },
+  "render_type": "solid"
+}

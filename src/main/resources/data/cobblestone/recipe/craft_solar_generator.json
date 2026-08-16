@@ -14,7 +14,7 @@
       "item": "cobblestone:mechanical_housing"
     },
     "c": {
-      "item": "cobblestone:original_circuit_board"
+      "tag": "c:circuit"
     }
   },
   "result": {
