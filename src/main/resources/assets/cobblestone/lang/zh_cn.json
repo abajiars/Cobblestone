@@ -57,5 +57,7 @@
   "item.cobblestone.solar_panel": "太阳能板",
   "block.cobblestone.solar_generator": "太阳能发电机",
   "block.cobblestone.gold_pipeline": "金导线",
-  "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy"
+  "cobblestone.configuration.max_gold_pipeline_energy": "金导线最大存储电力",
+  "item.cobblestone.redstone_crystal": "红石水晶",
+  "item.cobblestone.redstone_battery": "红石电池"
 }

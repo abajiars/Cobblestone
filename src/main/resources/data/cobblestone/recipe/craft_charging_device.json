@@ -13,7 +13,7 @@
       "item": "cobblestone:mechanical_housing"
     },
     "c": {
-      "item": "cobblestone:battery"
+      "tag": "c:cobblestone/battery"
     }
   },
   "result": {

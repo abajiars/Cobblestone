@@ -29,6 +29,7 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModItems.STONE_NUGGET.get());
 				tabData.accept(CobblestoneModItems.COPPER_NUGGET.get());
 				tabData.accept(CobblestoneModItems.QUARTZ_CRYSTAL.get());
+				tabData.accept(CobblestoneModItems.REDSTONE_CRYSTAL.get());
 				tabData.accept(CobblestoneModItems.WRENCH.get());
 				tabData.accept(CobblestoneModItems.HAMMER.get());
 				tabData.accept(CobblestoneModItems.STONE_STICK.get());
@@ -47,6 +48,7 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModBlocks.MONITOR.get().asItem());
 				tabData.accept(CobblestoneModBlocks.PIPELINE.get().asItem());
 				tabData.accept(CobblestoneModItems.BATTERY.get());
+				tabData.accept(CobblestoneModItems.REDSTONE_BATTERY.get());
 				tabData.accept(CobblestoneModItems.DISPLAY_SCREEN.get());
 				tabData.accept(CobblestoneModItems.RESISTOR.get());
 				tabData.accept(CobblestoneModItems.ORIGINAL_CIRCUIT_BOARD.get());

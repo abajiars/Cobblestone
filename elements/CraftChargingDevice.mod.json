@@ -34,7 +34,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Battery"
+        "value": "TAG:c:cobblestone/battery"
       },
       {
         "value": ""

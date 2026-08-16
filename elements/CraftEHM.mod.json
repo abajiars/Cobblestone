@@ -16,19 +16,19 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Wrench"
+        "value": "Blocks.STONE#0"
       },
       {
         "value": ""
       },
       {
-        "value": "TAG:c:cobblestone/battery"
+        "value": ""
       },
       {
-        "value": "TAG:c:cobblestone/battery"
+        "value": "CUSTOM:IronGear"
       },
       {
-        "value": "TAG:c:cobblestone/battery"
+        "value": ""
       },
       {
         "value": ""
@@ -41,9 +41,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EnergyStrongeTank"
+      "value": "CUSTOM:ElectricHammerMachine"
     },
-    "name": "craft_est",
+    "name": "craft_ehm",
     "namespace": "mod"
   }
 }

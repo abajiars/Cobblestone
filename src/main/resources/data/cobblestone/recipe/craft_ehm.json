@@ -2,23 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    "bbb",
-    " c "
+    "a",
+    "b",
+    "c"
   ],
   "key": {
     "a": {
-      "item": "cobblestone:wrench"
+      "item": "minecraft:stone"
     },
     "b": {
-      "tag": "c:cobblestone/battery"
+      "item": "cobblestone:iron_gear"
     },
     "c": {
       "item": "cobblestone:mechanical_housing"
     }
   },
   "result": {
-    "id": "cobblestone:energy_stronge_tank",
+    "id": "cobblestone:electric_hammer_machine",
     "count": 1
   }
 }

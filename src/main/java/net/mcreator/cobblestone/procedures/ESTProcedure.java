@@ -11,7 +11,9 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cobblestone.init.CobblestoneModItems;
@@ -34,7 +36,8 @@ public class ESTProcedure {
 			}
 		}
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") >= 20) {
-			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == CobblestoneModItems.BATTERY.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getDamageValue() > 0) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:cobblestone/battery")))
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getDamageValue() > 0) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -56,7 +59,8 @@ public class ESTProcedure {
 			}
 		}
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") <= getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MaxStoneEnergy") - 20) {
-			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.BATTERY.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getDamageValue() < 100) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:cobblestone/battery")))
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getDamageValue() < (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getMaxDamage() - 1) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -78,8 +82,8 @@ public class ESTProcedure {
 			}
 		}
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") <= getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MaxStoneEnergy") - (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() * 8) {
-			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.SOLAR_PANEL.get() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world instanceof Level _lvl27
-					&& _lvl27.isDay()) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.SOLAR_PANEL.get() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world instanceof Level _lvl29
+					&& _lvl29.isDay()) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);

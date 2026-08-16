@@ -2102,6 +2102,45 @@
           "src/main/resources/assets/cobblestone/models/item/gold_pipeline.json"
         ]
       }
+    },
+    {
+      "name": "RedstoneCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/RedstoneCrystalItem.java",
+          "src/main/resources/assets/cobblestone/models/item/redstone_crystal.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftEHM",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_ehm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_ehm.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "RedstoneBattery",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/redstone_battery.json",
+          "src/main/java/net/mcreator/cobblestone/item/RedstoneBatteryItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2124,6 +2163,7 @@
       "~CUSTOM:Hammer"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:RedstoneBattery",
       "~CUSTOM:Battery",
       "~CUSTOM:Wrench"
     ],
@@ -2136,6 +2176,10 @@
     ],
     "ITEMS:c:circuit": [
       "CUSTOM:OriginalCircuitBoard"
+    ],
+    "ITEMS:c:cobblestone/battery": [
+      "CUSTOM:Battery",
+      "CUSTOM:RedstoneBattery"
     ]
   },
   "tab_element_order": {
@@ -2146,6 +2190,7 @@
       "StoneNugget",
       "CopperNugget",
       "QuartzCrystal",
+      "RedstoneCrystal",
       "Wrench",
       "Hammer",
       "StoneStick",
@@ -2164,6 +2209,7 @@
       "Monitor",
       "Pipeline",
       "Battery",
+      "RedstoneBattery",
       "DisplayScreen",
       "Resistor",
       "OriginalCircuitBoard"
@@ -2229,7 +2275,9 @@
       "item.cobblestone.solar_panel": "Solar Panel",
       "block.cobblestone.solar_generator": "Solar Generator",
       "block.cobblestone.gold_pipeline": "Gold Pipeline",
-      "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy"
+      "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy",
+      "item.cobblestone.redstone_crystal": "Redstone Crystal",
+      "item.cobblestone.redstone_battery": "Redstone Battery"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2290,7 +2338,9 @@
       "item.cobblestone.solar_panel": "太阳能板",
       "block.cobblestone.solar_generator": "太阳能发电机",
       "block.cobblestone.gold_pipeline": "金导线",
-      "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy"
+      "cobblestone.configuration.max_gold_pipeline_energy": "金导线最大存储电力",
+      "item.cobblestone.redstone_crystal": "红石水晶",
+      "item.cobblestone.redstone_battery": "红石电池"
     }
   },
   "metadata": {

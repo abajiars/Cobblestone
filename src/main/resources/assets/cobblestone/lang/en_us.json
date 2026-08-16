@@ -57,5 +57,7 @@
   "item.cobblestone.solar_panel": "Solar Panel",
   "block.cobblestone.solar_generator": "Solar Generator",
   "block.cobblestone.gold_pipeline": "Gold Pipeline",
-  "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy"
+  "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy",
+  "item.cobblestone.redstone_crystal": "Redstone Crystal",
+  "item.cobblestone.redstone_battery": "Redstone Battery"
 }
