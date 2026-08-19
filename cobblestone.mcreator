@@ -2098,6 +2098,7 @@
           "src/main/java/net/mcreator/cobblestone/block/GoldPipelineBlock.java",
           "src/main/resources/data/cobblestone/loot_table/blocks/gold_pipeline.json",
           "src/main/resources/assets/cobblestone/models/block/gold_pipeline.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/GoldPipelineBlockEntity.java",
           "src/main/resources/assets/cobblestone/blockstates/gold_pipeline.json",
           "src/main/resources/assets/cobblestone/models/item/gold_pipeline.json"
         ]
@@ -2141,6 +2142,79 @@
           "src/main/java/net/mcreator/cobblestone/item/RedstoneBatteryItem.java"
         ]
       }
+    },
+    {
+      "name": "CraftRedstoneBattery",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_redstone_battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_redstone_battery.json"
+        ]
+      },
+      "path": "~/repice"
+    },
+    {
+      "name": "OverclockerUpgrade",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overclocker_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/item/OverclockerUpgradeItem.java",
+          "src/main/resources/assets/cobblestone/models/item/overclocker_upgrade.json"
+        ]
+      }
+    },
+    {
+      "name": "Transmission2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transmission_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/Transmission2Procedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftGoldPipeline",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_gold_pipeline",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cobblestone/recipe/craft_gold_pipeline.json"
+        ]
+      },
+      "path": "~/repice"
     }
   ],
   "variable_elements": [
@@ -2207,12 +2281,16 @@
       "ElectricHammerMachine",
       "ChargingDevice",
       "Monitor",
+      "SolarGenerator",
       "Pipeline",
+      "GoldPipeline",
       "Battery",
       "RedstoneBattery",
       "DisplayScreen",
       "Resistor",
-      "OriginalCircuitBoard"
+      "OriginalCircuitBoard",
+      "SolarPanel",
+      "OverclockerUpgrade"
     ]
   },
   "language_map": {
@@ -2277,7 +2355,8 @@
       "block.cobblestone.gold_pipeline": "Gold Pipeline",
       "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy",
       "item.cobblestone.redstone_crystal": "Redstone Crystal",
-      "item.cobblestone.redstone_battery": "Redstone Battery"
+      "item.cobblestone.redstone_battery": "Redstone Battery",
+      "item.cobblestone.overclocker_upgrade": "Overclocker Upgrade"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2340,7 +2419,8 @@
       "block.cobblestone.gold_pipeline": "金导线",
       "cobblestone.configuration.max_gold_pipeline_energy": "金导线最大存储电力",
       "item.cobblestone.redstone_crystal": "红石水晶",
-      "item.cobblestone.redstone_battery": "红石电池"
+      "item.cobblestone.redstone_battery": "红石电池",
+      "item.cobblestone.overclocker_upgrade": "超频升级"
     }
   },
   "metadata": {
@@ -2375,7 +2455,7 @@
   "workspaceSettings": {
     "modid": "cobblestone",
     "modName": "Cobblestone",
-    "version": "1.0.3-indev",
+    "version": "1.0.4-indev",
     "description": "Cobblestone give birth to all things.",
     "author": "MCreator,abajiar",
     "websiteURL": "https://mcreator.net",

@@ -48,6 +48,21 @@ public class ElectricHammermachinepProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.OVERCLOCKER_UPGRADE.get()
+					&& getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") >= (Math.pow(4, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1) * 20) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null) {
+						_blockEntity.getPersistentData().putDouble("second", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") + Math.pow(2, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1));
+						_blockEntity.getPersistentData().putDouble("StoneEnergy",
+								(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") - (Math.pow(4, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1) * 20));
+					}
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
@@ -97,6 +112,21 @@ public class ElectricHammermachinepProcedure {
 				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.OVERCLOCKER_UPGRADE.get()
+					&& getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") >= (Math.pow(4, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1) * 20) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null) {
+						_blockEntity.getPersistentData().putDouble("second", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") + Math.pow(2, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1));
+						_blockEntity.getPersistentData().putDouble("StoneEnergy",
+								(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") - (Math.pow(4, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1) * 20));
+					}
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
 			}
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -148,6 +178,21 @@ public class ElectricHammermachinepProcedure {
 				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == CobblestoneModItems.OVERCLOCKER_UPGRADE.get()
+					&& getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") >= (Math.pow(4, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1) * 20) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null) {
+						_blockEntity.getPersistentData().putDouble("second", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") + Math.pow(2, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1));
+						_blockEntity.getPersistentData().putDouble("StoneEnergy",
+								(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "StoneEnergy") - (Math.pow(4, itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()) - 1) * 20));
+					}
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
 			}
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);

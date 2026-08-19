@@ -12,7 +12,7 @@ public class SetEnergyConfiguration {
 		BUILDER.push("max_energy");
 		MAX_STONE_ENERGY = BUILDER.comment("Max Machine's Energy").define("max_stone_energy", (double) 20000);
 		MAX_PIPELINE_ENERGY = BUILDER.comment("Max Pipeline's Energy").define("max_pipeline_energy", (double) 1000);
-		MAX_GOLD_PIPELINE_ENERGY = BUILDER.comment("Max Gold Pipeline's Energy").define("max_gold_pipeline_energy", (double) 3000);
+		MAX_GOLD_PIPELINE_ENERGY = BUILDER.comment("Max Gold Pipeline's Energy").define("max_gold_pipeline_energy", (double) 4000);
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();

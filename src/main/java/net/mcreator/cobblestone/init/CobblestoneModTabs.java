@@ -46,12 +46,16 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModBlocks.ELECTRIC_HAMMER_MACHINE.get().asItem());
 				tabData.accept(CobblestoneModBlocks.CHARGING_DEVICE.get().asItem());
 				tabData.accept(CobblestoneModBlocks.MONITOR.get().asItem());
+				tabData.accept(CobblestoneModBlocks.SOLAR_GENERATOR.get().asItem());
 				tabData.accept(CobblestoneModBlocks.PIPELINE.get().asItem());
+				tabData.accept(CobblestoneModBlocks.GOLD_PIPELINE.get().asItem());
 				tabData.accept(CobblestoneModItems.BATTERY.get());
 				tabData.accept(CobblestoneModItems.REDSTONE_BATTERY.get());
 				tabData.accept(CobblestoneModItems.DISPLAY_SCREEN.get());
 				tabData.accept(CobblestoneModItems.RESISTOR.get());
 				tabData.accept(CobblestoneModItems.ORIGINAL_CIRCUIT_BOARD.get());
+				tabData.accept(CobblestoneModItems.SOLAR_PANEL.get());
+				tabData.accept(CobblestoneModItems.OVERCLOCKER_UPGRADE.get());
 			}).build());
 
 	@SubscribeEvent

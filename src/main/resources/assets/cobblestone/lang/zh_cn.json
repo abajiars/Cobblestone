@@ -59,5 +59,6 @@
   "block.cobblestone.gold_pipeline": "金导线",
   "cobblestone.configuration.max_gold_pipeline_energy": "金导线最大存储电力",
   "item.cobblestone.redstone_crystal": "红石水晶",
-  "item.cobblestone.redstone_battery": "红石电池"
+  "item.cobblestone.redstone_battery": "红石电池",
+  "item.cobblestone.overclocker_upgrade": "超频升级"
 }

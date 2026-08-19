@@ -4,6 +4,6 @@ import net.minecraft.world.item.ItemStack;
 
 public class InBatteryEnergyProcedure {
 	public static String execute(ItemStack itemstack) {
-		return (100 - itemstack.getDamageValue()) * 20 + "/" + 2000;
+		return ((itemstack.getMaxDamage() - 1) - itemstack.getDamageValue()) * 20 + "/" + (itemstack.getMaxDamage() - 1) * 20;
 	}
 }

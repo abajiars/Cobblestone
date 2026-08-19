@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:copper_ingot"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "cobblestone:redstone_crystal"
+    }
+  },
+  "result": {
+    "id": "cobblestone:redstone_battery",
+    "count": 1
+  }
+}

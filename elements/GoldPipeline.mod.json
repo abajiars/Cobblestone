@@ -50,7 +50,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Cobblestones"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -65,7 +69,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": true,
     "lightOpacity": 0,
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -93,7 +97,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -121,7 +125,7 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 99,
@@ -137,6 +141,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "SetPipelineEnergy"
+    },
+    "onTickUpdate": {
+      "name": "Transmission2"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -3,20 +3,20 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "solar_panel",
+    "texture": "overclocker_upgrade",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Solar Panel",
+    "name": "Overclocker Upgrade",
     "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Cobblestones"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 4,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

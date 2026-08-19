@@ -34,7 +34,8 @@
     "damageVsEntity": 4.0,
     "attackSpeed": 1.2,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "InBatteryEnergy"
     },
     "glowCondition": {
       "fixedValue": false
