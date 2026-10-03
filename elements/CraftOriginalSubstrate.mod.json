@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Pipeline"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Pipeline"
-      },
-      {
-        "value": "Blocks.PLANKS#0"
-      },
-      {
-        "value": "CUSTOM:Pipeline"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Pipeline"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:Pipeline",
+      "",
+      "CUSTOM:Pipeline",
+      "Blocks.PLANKS#0",
+      "CUSTOM:Pipeline",
+      "",
+      "CUSTOM:Pipeline",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:OriginalSubstrate"
-    },
+    "recipeReturnStack": "CUSTOM:OriginalSubstrate",
     "name": "craft_original_substrate",
     "namespace": "mod"
   }

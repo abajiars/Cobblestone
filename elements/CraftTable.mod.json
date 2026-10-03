@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.CRAFTING_TABLE"
-    },
+    "recipeReturnStack": "Blocks.CRAFTING_TABLE",
     "name": "craft_table",
     "namespace": "mod"
   }

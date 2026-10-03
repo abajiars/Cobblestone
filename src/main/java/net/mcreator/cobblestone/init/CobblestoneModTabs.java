@@ -56,12 +56,14 @@ public class CobblestoneModTabs {
 				tabData.accept(CobblestoneModItems.ORIGINAL_CIRCUIT_BOARD.get());
 				tabData.accept(CobblestoneModItems.SOLAR_PANEL.get());
 				tabData.accept(CobblestoneModItems.OVERCLOCKER_UPGRADE.get());
+				tabData.accept(CobblestoneModItems.STONE_BOOK.get());
 			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(CobblestoneModItems.HAMMER.get());
+			tabData.accept(CobblestoneModItems.STONE_BOOK.get());
 		}
 	}
 }

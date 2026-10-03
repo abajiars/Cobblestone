@@ -48,7 +48,10 @@ public class ChargingDeviceBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(IS_WORKING, false);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(IS_WORKING, false);
 	}
 
 	@Override

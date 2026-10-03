@@ -68,7 +68,10 @@ public class SleveBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(SCREEN, 0);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(SCREEN, 0);
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class HammerYouJiFangKuaiShiFangKuaiDeWeiZhiProcedure {
 			}
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CLAY) {
-			for (int index0 = 0; index0 < 4; index0++) {
+			for (int _i1 = 0; _i1 < 4; _i1++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.CLAY_BALL));
 					entityToSpawn.setPickUpDelay(10);

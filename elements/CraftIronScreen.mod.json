@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      }
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick",
+      "CUSTOM:IronStick"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IronScreen"
-    },
+    "recipeReturnStack": "CUSTOM:IronScreen",
     "name": "craft_iron_screen",
     "namespace": "mod"
   }

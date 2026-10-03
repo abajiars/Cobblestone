@@ -1,11 +1,9 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tab",
   "definition": {
     "name": "Cobblestones",
-    "icon": {
-      "value": "Blocks.COBBLESTONE"
-    },
+    "icon": "Blocks.COBBLESTONE",
     "showSearch": false
   }
 }

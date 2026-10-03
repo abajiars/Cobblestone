@@ -50,7 +50,10 @@ public class ThermalPowerGeneratorBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(HEATING, false);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(HEATING, false);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "just_cobblestone_0": {
+    "just_cobblestone_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

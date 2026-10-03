@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:StoneStick"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "CUSTOM:StoneStick"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "CUSTOM:Hammer"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "CUSTOM:StoneStick"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "CUSTOM:StoneStick"
-      }
+      "CUSTOM:StoneStick",
+      "Blocks.COBBLESTONE",
+      "CUSTOM:StoneStick",
+      "Blocks.COBBLESTONE",
+      "CUSTOM:Hammer",
+      "Blocks.COBBLESTONE",
+      "CUSTOM:StoneStick",
+      "Blocks.COBBLESTONE",
+      "CUSTOM:StoneStick"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:StoneGear"
-    },
+    "recipeReturnStack": "CUSTOM:StoneGear",
     "name": "craft_stone_gear",
     "namespace": "mod"
   }

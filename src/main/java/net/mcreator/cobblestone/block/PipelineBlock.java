@@ -38,10 +38,10 @@ public class PipelineBlock extends Block implements EntityBlock {
 	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
 		return this.getShapeForEachState(state -> {
 			return switch (state.getValue(FACING)) {
-				default -> box(0, 6, 6, 16, 10, 10);
 				case NORTH -> box(0, 6, 6, 16, 10, 10);
 				case EAST -> box(6, 6, 0, 10, 10, 16);
 				case WEST -> box(6, 6, 0, 10, 10, 16);
+				default -> box(0, 6, 6, 16, 10, 10);
 			};
 		});
 	}
@@ -74,7 +74,10 @@ public class PipelineBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

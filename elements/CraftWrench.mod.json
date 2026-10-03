@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": ""
-      }
+      "Blocks.COBBLESTONE",
+      "",
+      "Blocks.COBBLESTONE",
+      "",
+      "Items.IRON_INGOT",
+      "",
+      "",
+      "Blocks.COBBLESTONE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Wrench"
-    },
+    "recipeReturnStack": "CUSTOM:Wrench",
     "name": "craft_wrench",
     "namespace": "mod"
   }

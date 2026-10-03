@@ -1,0 +1,132 @@
+{
+  "_fv": 89,
+  "_type": "custombook",
+  "definition": {
+    "name": "Stone Book",
+    "bookTitle": "Stone Book",
+    "author": "abajiar",
+    "generation": 0,
+    "rarity": "COMMON",
+    "glow": false,
+    "stackSize": 1,
+    "enchantability": 0,
+    "immuneToFire": false,
+    "isPiglinCurrency": false,
+    "destroyAnyBlock": false,
+    "startingBook": false,
+    "hideNextArrowAtCategoryEnd": false,
+    "renderType": 0,
+    "customModelName": "Normal",
+    "texture": "book",
+    "itemTexture": "book",
+    "texturePath": "book",
+    "categories": [
+      {
+        "id": "4937e85f-d16b-468c-9371-634858c77ac6",
+        "name": "通用",
+        "pages": [
+          {
+            "id": "da97439f-69bd-4c53-b0f6-278970bda46a",
+            "title": "Cobblestone",
+            "showTitle": true,
+            "titleDesign": {
+              "content": "Cobblestone",
+              "align": "CENTER",
+              "position": "TOP",
+              "offset": 0,
+              "height": 24,
+              "barVisible": true,
+              "barColor": "#DDCDAA",
+              "barLength": 228,
+              "barThickness": 1
+            },
+            "content": "",
+            "elements": [
+              {
+                "id": "1a4d36c6-9114-4135-a1b4-7a0db9d543de",
+                "type": "TEXT",
+                "x": 18,
+                "y": 48,
+                "width": 220,
+                "height": 220,
+                "content": "",
+                "align": "LEFT",
+                "mediaName": "",
+                "frames": [],
+                "frameDelay": 100,
+                "label": "Button",
+                "targetCategoryId": "",
+                "targetPageId": "",
+                "buttonStyle": "CLASSIC",
+                "buttonBackgroundColor": "#8A6846",
+                "buttonBorderColor": "#6D5237",
+                "buttonTextColor": "#FFEDC5",
+                "buttonImageName": "",
+                "buttonImageType": "SCREEN",
+                "buttonImageMode": "NONE",
+                "resizeBySides": true,
+                "resizeByCorners": true
+              },
+              {
+                "id": "77a3015a-c426-481d-92a0-daea454ed0b8",
+                "type": "NAV_PREV",
+                "x": 12,
+                "y": 278,
+                "width": 18,
+                "height": 18,
+                "content": "",
+                "align": "LEFT",
+                "mediaName": "",
+                "frames": [],
+                "frameDelay": 100,
+                "label": "Button",
+                "targetCategoryId": "",
+                "targetPageId": "",
+                "buttonStyle": "TRANSPARENT",
+                "buttonBackgroundColor": "#FFF4D6",
+                "buttonBorderColor": "#6D5237",
+                "buttonTextColor": "#6A5842",
+                "buttonImageName": "",
+                "buttonImageType": "SCREEN",
+                "buttonImageMode": "NONE",
+                "resizeBySides": true,
+                "resizeByCorners": true
+              },
+              {
+                "id": "6ef638b4-eb9e-4df8-853f-2b6a3db176ff",
+                "type": "NAV_NEXT",
+                "x": 226,
+                "y": 278,
+                "width": 18,
+                "height": 18,
+                "content": "",
+                "align": "LEFT",
+                "mediaName": "",
+                "frames": [],
+                "frameDelay": 100,
+                "label": "Button",
+                "targetCategoryId": "",
+                "targetPageId": "",
+                "buttonStyle": "TRANSPARENT",
+                "buttonBackgroundColor": "#FFF4D6",
+                "buttonBorderColor": "#6D5237",
+                "buttonTextColor": "#6A5842",
+                "buttonImageName": "",
+                "buttonImageType": "SCREEN",
+                "buttonImageMode": "NONE",
+                "resizeBySides": true,
+                "resizeByCorners": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "pages": [],
+    "creativeTab": "TOOLS",
+    "creativeTabs": [
+      "TOOLS",
+      "CUSTOM:Cobblestones"
+    ]
+  }
+}

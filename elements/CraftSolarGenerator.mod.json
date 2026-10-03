@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SolarPanel"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MechanicalHousing"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:circuit"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:SolarPanel",
+      "",
+      "",
+      "CUSTOM:MechanicalHousing",
+      "",
+      "",
+      "TAG:c:circuit",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SolarGenerator"
-    },
+    "recipeReturnStack": "CUSTOM:SolarGenerator",
     "name": "craft_solar_generator",
     "namespace": "mod"
   }

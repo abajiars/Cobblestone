@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -17,12 +17,8 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "TOOLS"
-      },
-      {
-        "value": "CUSTOM:Cobblestones"
-      }
+      "TOOLS",
+      "CUSTOM:Cobblestones"
     ],
     "efficiency": 4.0,
     "attackSpeed": 1.0,
@@ -39,8 +35,6 @@
     "attributeModifiers": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": true,
-    "onRightClickedOnBlock": {
-      "name": "HammerYouJiFangKuaiShiFangKuaiDeWeiZhi"
-    }
+    "onRightClickedOnBlock": "HammerYouJiFangKuaiShiFangKuaiDeWeiZhi"
   }
 }

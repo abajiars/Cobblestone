@@ -1,26 +1,20 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
     "unlockingItems": [
-      {
-        "value": "CUSTOM:GlassDust"
-      }
+      "CUSTOM:GlassDust"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 1.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:GlassDust"
-    },
-    "smeltingReturnStack": {
-      "value": "Blocks.GLASS"
-    },
+    "smeltingInputStack": "CUSTOM:GlassDust",
+    "smeltingReturnStack": "Blocks.GLASS",
     "name": "glass",
     "namespace": "mod"
   }

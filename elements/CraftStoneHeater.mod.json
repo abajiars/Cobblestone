@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "CUSTOM:Hammer"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Items.FLINT"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      }
+      "Blocks.COBBLESTONE",
+      "",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "CUSTOM:Hammer",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "Items.FLINT",
+      "Blocks.COBBLESTONE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:StoneHeater"
-    },
+    "recipeReturnStack": "CUSTOM:StoneHeater",
     "name": "craft_stone_heater",
     "namespace": "mod"
   }

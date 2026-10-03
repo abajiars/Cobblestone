@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "craft_a_hammer_0": {
+    "craft_a_hammer_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

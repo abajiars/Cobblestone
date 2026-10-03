@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "CUSTOM:OriginalSubstrate"
-      },
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "CUSTOM:Battery"
-      },
-      {
-        "value": "TAG:c:led"
-      }
+      "TAG:c:led",
+      "TAG:c:led",
+      "TAG:c:led",
+      "TAG:c:led",
+      "CUSTOM:OriginalSubstrate",
+      "TAG:c:led",
+      "TAG:c:led",
+      "CUSTOM:Battery",
+      "TAG:c:led"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DisplayScreen"
-    },
+    "recipeReturnStack": "CUSTOM:DisplayScreen",
     "name": "craft_display_screen",
     "namespace": "mod"
   }

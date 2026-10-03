@@ -1,7 +1,7 @@
 {
   "item.cobblestone.hammer": "Hammer",
   "item.cobblestone.stone_stick": "Stone Stick",
-  "item.cobblestone.hammer.description_0": "Smash everything.",
+  "item.cobblestone.hammer.description_0": "锤碎一切。",
   "item.cobblestone.stone_gear": "Stone Gear",
   "item_group.cobblestone.cobblestones": "Cobblestones",
   "block.cobblestone.hammer_machine": "Hammer Machine",
@@ -43,7 +43,7 @@
   "item.cobblestone.quartz_led": "Quartz LED",
   "item.cobblestone.original_substrate": "Original Substrate",
   "block.cobblestone.monitor": "Monitor",
-  "block.cobblestone.monitor.description_0": "Monitoring the status of the bottom machine.",
+  "block.cobblestone.monitor.description_0": "监测底部机器状态。",
   "item.cobblestone.display_screen": "Display Screen",
   "gui.cobblestone.monitor.detection": "No machine at the bottom.",
   "gui.cobblestone.monitor.status1": "The machine was forced to stop running.",
@@ -60,5 +60,10 @@
   "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy",
   "item.cobblestone.redstone_crystal": "Redstone Crystal",
   "item.cobblestone.redstone_battery": "Redstone Battery",
-  "item.cobblestone.overclocker_upgrade": "Overclocker Upgrade"
+  "item.cobblestone.overclocker_upgrade": "Overclocker Upgrade",
+  "item.cobblestone.overcloker.prompt": "",
+  "item.cobblestone.overcloker_upgrade.prompt": "When energy is insufficient to enable overclocking, it will operate at the original speed.",
+  "item.cobblestone.overclocker_upgrade.time": "Time reduced by ",
+  "item.cobblestone.overclocker_upgrade.energy": "Energy demand increases by ",
+  "item.cobblestone.stone_book": "Stone Book"
 }

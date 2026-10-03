@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Wrench"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:cobblestone/battery"
-      },
-      {
-        "value": "TAG:c:cobblestone/battery"
-      },
-      {
-        "value": "TAG:c:cobblestone/battery"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MechanicalHousing"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:Wrench",
+      "",
+      "TAG:c:cobblestone/battery",
+      "TAG:c:cobblestone/battery",
+      "TAG:c:cobblestone/battery",
+      "",
+      "CUSTOM:MechanicalHousing",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EnergyStrongeTank"
-    },
+    "recipeReturnStack": "CUSTOM:EnergyStrongeTank",
     "name": "craft_est",
     "namespace": "mod"
   }

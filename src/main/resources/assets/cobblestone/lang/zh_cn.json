@@ -60,5 +60,10 @@
   "cobblestone.configuration.max_gold_pipeline_energy": "金导线最大存储电力",
   "item.cobblestone.redstone_crystal": "红石水晶",
   "item.cobblestone.redstone_battery": "红石电池",
-  "item.cobblestone.overclocker_upgrade": "超频升级"
+  "item.cobblestone.overclocker_upgrade": "超频升级",
+  "item.cobblestone.overcloker.prompt": "当能量不足无法超频时，则按照原速运行。",
+  "item.cobblestone.overcloker_upgrade.prompt": "当能量不足无法超频时，则按照原速运行。",
+  "item.cobblestone.overclocker_upgrade.time": "时间减少",
+  "item.cobblestone.overclocker_upgrade.energy": "能量需求增加",
+  "item.cobblestone.stone_book": "Stone Book"
 }

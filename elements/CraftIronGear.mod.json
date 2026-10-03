@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:Hammer"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:IronStick"
-      }
+      "CUSTOM:IronStick",
+      "Items.IRON_INGOT",
+      "CUSTOM:IronStick",
+      "Items.IRON_INGOT",
+      "CUSTOM:Hammer",
+      "Items.IRON_INGOT",
+      "CUSTOM:IronStick",
+      "Items.IRON_INGOT",
+      "CUSTOM:IronStick"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:IronGear"
-    },
+    "recipeReturnStack": "CUSTOM:IronGear",
     "name": "craft_iron_gear",
     "namespace": "mod"
   }

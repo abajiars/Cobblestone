@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Pipeline"
-      },
-      {
-        "value": "CUSTOM:CoalPowder"
-      },
-      {
-        "value": "CUSTOM:Pipeline"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.IRON_INGOT",
+      "",
+      "CUSTOM:Pipeline",
+      "CUSTOM:CoalPowder",
+      "CUSTOM:Pipeline",
+      "",
+      "Items.IRON_INGOT",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Battery"
-    },
+    "recipeReturnStack": "CUSTOM:Battery",
     "name": "craft_battery",
     "namespace": "mod"
   }

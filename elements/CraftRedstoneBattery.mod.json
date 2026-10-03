@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.COPPER_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:RedstoneCrystal"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:RedstoneCrystal"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "",
+      "Items.COPPER_INGOT",
+      "",
+      "Items.IRON_INGOT",
+      "CUSTOM:RedstoneCrystal",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "CUSTOM:RedstoneCrystal",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RedstoneBattery"
-    },
+    "recipeReturnStack": "CUSTOM:RedstoneBattery",
     "name": "craft_redstone_battery",
     "namespace": "mod"
   }

@@ -22,7 +22,7 @@ description="Cobblestone give birth to all things."
 [[dependencies.cobblestone]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.190,)"
+    versionRange="[21.1.232,)"
     ordering="AFTER"
     side="BOTH"
 

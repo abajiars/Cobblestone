@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Wrench"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MechanicalHousing"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.FURNACE"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:Wrench",
+      "",
+      "",
+      "CUSTOM:MechanicalHousing",
+      "",
+      "",
+      "Blocks.FURNACE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ThermalPowerGenerator"
-    },
+    "recipeReturnStack": "CUSTOM:ThermalPowerGenerator",
     "name": "craft_tpg",
     "namespace": "mod"
   }

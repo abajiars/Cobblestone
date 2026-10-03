@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "Items.COPPER_INGOT"
-      },
-      {
-        "value": "TAG:c:led"
-      },
-      {
-        "value": "CUSTOM:Resistor"
-      },
-      {
-        "value": "CUSTOM:OriginalSubstrate"
-      },
-      {
-        "value": "CUSTOM:Resistor"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Pipeline"
-      },
-      {
-        "value": ""
-      }
+      "TAG:c:led",
+      "Items.COPPER_INGOT",
+      "TAG:c:led",
+      "CUSTOM:Resistor",
+      "CUSTOM:OriginalSubstrate",
+      "CUSTOM:Resistor",
+      "",
+      "CUSTOM:Pipeline",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:OriginalCircuitBoard"
-    },
+    "recipeReturnStack": "CUSTOM:OriginalCircuitBoard",
     "name": "craft_ocb",
     "namespace": "mod"
   }

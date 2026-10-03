@@ -1,5 +1,5 @@
 {
-  "_fv": 85,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "CUSTOM:StoneGear"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      },
-      {
-        "value": "Blocks.COBBLESTONE"
-      }
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "CUSTOM:StoneGear",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE",
+      "Blocks.COBBLESTONE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HammerMachine"
-    },
+    "recipeReturnStack": "CUSTOM:HammerMachine",
     "name": "craft_hammer_machine",
     "namespace": "mod"
   }

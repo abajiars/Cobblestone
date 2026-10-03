@@ -2215,6 +2215,40 @@
         ]
       },
       "path": "~/repice"
+    },
+    {
+      "name": "Overclockertext",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overclockertext",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/OverclockertextProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "StoneBook",
+      "type": "custombook",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/client/gui/StoneBookBookScreen.java",
+          "src/main/java/net/mcreator/cobblestone/item/StoneBookItem.java",
+          "src/main/resources/assets/cobblestone/models/item/stone_book.json",
+          "src/main/java/net/mcreator/cobblestone/client/StoneBookBookClientEvents.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2233,14 +2267,6 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:Hammer"
-    ],
-    "ITEMS:minecraft:enchantable/durability": [
-      "~CUSTOM:RedstoneBattery",
-      "~CUSTOM:Battery",
-      "~CUSTOM:Wrench"
-    ],
     "BLOCKS:c:cobblestone/generator": [
       "CUSTOM:ThermalPowerGenerator",
       "CUSTOM:StoneHeater"
@@ -2254,6 +2280,14 @@
     "ITEMS:c:cobblestone/battery": [
       "CUSTOM:Battery",
       "CUSTOM:RedstoneBattery"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~Hammer@CUSTOM:Hammer"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~RedstoneBattery@CUSTOM:RedstoneBattery",
+      "~Battery@CUSTOM:Battery",
+      "~Wrench@CUSTOM:Wrench"
     ]
   },
   "tab_element_order": {
@@ -2290,14 +2324,15 @@
       "Resistor",
       "OriginalCircuitBoard",
       "SolarPanel",
-      "OverclockerUpgrade"
+      "OverclockerUpgrade",
+      "StoneBook"
     ]
   },
   "language_map": {
     "en_us": {
       "item.cobblestone.hammer": "Hammer",
       "item.cobblestone.stone_stick": "Stone Stick",
-      "item.cobblestone.hammer.description_0": "Smash everything.",
+      "item.cobblestone.hammer.description_0": "锤碎一切。",
       "item.cobblestone.stone_gear": "Stone Gear",
       "item_group.cobblestone.cobblestones": "Cobblestones",
       "block.cobblestone.hammer_machine": "Hammer Machine",
@@ -2339,7 +2374,7 @@
       "item.cobblestone.quartz_led": "Quartz LED",
       "item.cobblestone.original_substrate": "Original Substrate",
       "block.cobblestone.monitor": "Monitor",
-      "block.cobblestone.monitor.description_0": "Monitoring the status of the bottom machine.",
+      "block.cobblestone.monitor.description_0": "监测底部机器状态。",
       "item.cobblestone.display_screen": "Display Screen",
       "gui.cobblestone.monitor.detection": "No machine at the bottom.",
       "gui.cobblestone.monitor.status1": "The machine was forced to stop running.",
@@ -2356,7 +2391,12 @@
       "cobblestone.configuration.max_gold_pipeline_energy": "max_gold_pipeline_energy",
       "item.cobblestone.redstone_crystal": "Redstone Crystal",
       "item.cobblestone.redstone_battery": "Redstone Battery",
-      "item.cobblestone.overclocker_upgrade": "Overclocker Upgrade"
+      "item.cobblestone.overclocker_upgrade": "Overclocker Upgrade",
+      "item.cobblestone.overcloker.prompt": "",
+      "item.cobblestone.overcloker_upgrade.prompt": "When energy is insufficient to enable overclocking, it will operate at the original speed.",
+      "item.cobblestone.overclocker_upgrade.time": "Time reduced by ",
+      "item.cobblestone.overclocker_upgrade.energy": "Energy demand increases by ",
+      "item.cobblestone.stone_book": "Stone Book"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2420,7 +2460,12 @@
       "cobblestone.configuration.max_gold_pipeline_energy": "金导线最大存储电力",
       "item.cobblestone.redstone_crystal": "红石水晶",
       "item.cobblestone.redstone_battery": "红石电池",
-      "item.cobblestone.overclocker_upgrade": "超频升级"
+      "item.cobblestone.overclocker_upgrade": "超频升级",
+      "item.cobblestone.overcloker.prompt": "当能量不足无法超频时，则按照原速运行。",
+      "item.cobblestone.overcloker_upgrade.prompt": "当能量不足无法超频时，则按照原速运行。",
+      "item.cobblestone.overclocker_upgrade.time": "时间减少",
+      "item.cobblestone.overclocker_upgrade.energy": "能量需求增加",
+      "item.cobblestone.stone_book": "Stone Book"
     }
   },
   "metadata": {
@@ -2436,7 +2481,8 @@
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/cobblestone/init/CobblestoneModTabs.java",
       "src/main/java/net/mcreator/cobblestone/network/CobblestoneModVariables.java",
-      "src/main/resources/META-INF/neoforge.mods.toml"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/cobblestone.mixins.json"
     ]
   },
   "foldersRoot": {
@@ -2470,5 +2516,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.cobblestone"
   },
-  "mcreatorVersion": 202600114619
+  "mcreatorVersion": 202600233518
 }
