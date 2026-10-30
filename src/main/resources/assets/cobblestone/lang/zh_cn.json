@@ -65,5 +65,6 @@
   "item.cobblestone.overcloker_upgrade.prompt": "当能量不足无法超频时，则按照原速运行。",
   "item.cobblestone.overclocker_upgrade.time": "时间减少",
   "item.cobblestone.overclocker_upgrade.energy": "能量需求增加",
-  "item.cobblestone.stone_book": "Stone Book"
+  "item.cobblestone.stone_book": "石之书",
+  "block.cobblestone.electric_extruder": "电动挤压机"
 }

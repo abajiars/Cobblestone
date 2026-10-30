@@ -2249,6 +2249,163 @@
           "src/main/java/net/mcreator/cobblestone/client/StoneBookBookClientEvents.java"
         ]
       }
+    },
+    {
+      "name": "ElectricExtruder",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_extruder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cobblestone/models/item/electric_extruder.json",
+          "src/main/resources/assets/cobblestone/models/block/electric_extruder_0.json",
+          "src/main/resources/data/cobblestone/loot_table/blocks/electric_extruder.json",
+          "src/main/resources/assets/cobblestone/blockstates/electric_extruder.json",
+          "src/main/java/net/mcreator/cobblestone/block/ElectricExtruderBlock.java",
+          "src/main/resources/assets/cobblestone/models/block/electric_extruder.json",
+          "src/main/java/net/mcreator/cobblestone/block/entity/ElectricExtruderBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ElectricExtruderGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_extruder_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/client/gui/ElectricExtruderGUIScreen.java",
+          "src/main/java/net/mcreator/cobblestone/world/inventory/ElectricExtruderGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "ElectricHammerMachineOneP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_hammer_machine_one_p",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "InputItem",
+            "type": "itemstack"
+          },
+          {
+            "name": "OutputItem",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ElectricHammerMachineOnePProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SieveItemP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sieve_item_p",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "OutputItem",
+            "type": "itemstack"
+          },
+          {
+            "name": "Chance",
+            "type": "number"
+          },
+          {
+            "name": "ScreenLevel",
+            "type": "number"
+          },
+          {
+            "name": "bouns",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/SieveItemPProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ChargingItemP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "charging_item_p",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "InputItem",
+            "type": "itemstack"
+          },
+          {
+            "name": "OutputItem",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/cobblestone/procedures/ChargingItemPProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2396,7 +2553,8 @@
       "item.cobblestone.overcloker_upgrade.prompt": "When energy is insufficient to enable overclocking, it will operate at the original speed.",
       "item.cobblestone.overclocker_upgrade.time": "Time reduced by ",
       "item.cobblestone.overclocker_upgrade.energy": "Energy demand increases by ",
-      "item.cobblestone.stone_book": "Stone Book"
+      "item.cobblestone.stone_book": "Stone Book",
+      "block.cobblestone.electric_extruder": "Electric Extruder"
     },
     "zh_cn": {
       "item.cobblestone.hammer": "锤子",
@@ -2465,7 +2623,8 @@
       "item.cobblestone.overcloker_upgrade.prompt": "当能量不足无法超频时，则按照原速运行。",
       "item.cobblestone.overclocker_upgrade.time": "时间减少",
       "item.cobblestone.overclocker_upgrade.energy": "能量需求增加",
-      "item.cobblestone.stone_book": "Stone Book"
+      "item.cobblestone.stone_book": "石之书",
+      "block.cobblestone.electric_extruder": "电动挤压机"
     }
   },
   "metadata": {

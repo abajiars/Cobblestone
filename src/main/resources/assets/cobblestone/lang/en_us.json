@@ -65,5 +65,6 @@
   "item.cobblestone.overcloker_upgrade.prompt": "When energy is insufficient to enable overclocking, it will operate at the original speed.",
   "item.cobblestone.overclocker_upgrade.time": "Time reduced by ",
   "item.cobblestone.overclocker_upgrade.energy": "Energy demand increases by ",
-  "item.cobblestone.stone_book": "Stone Book"
+  "item.cobblestone.stone_book": "Stone Book",
+  "block.cobblestone.electric_extruder": "Electric Extruder"
 }

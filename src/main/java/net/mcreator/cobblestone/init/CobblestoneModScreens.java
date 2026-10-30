@@ -20,6 +20,7 @@ public class CobblestoneModScreens {
 		event.register(CobblestoneModMenus.ESTGUI.get(), ESTGUIScreen::new);
 		event.register(CobblestoneModMenus.CHARGING_DEVICE_GUI.get(), ChargingDeviceGUIScreen::new);
 		event.register(CobblestoneModMenus.MONITOR_GUI.get(), MonitorGUIScreen::new);
+		event.register(CobblestoneModMenus.ELECTRIC_EXTRUDER_GUI.get(), ElectricExtruderGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

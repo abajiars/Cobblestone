@@ -24,12 +24,31 @@ import net.mcreator.cobblestone.procedures.Transmission2Procedure;
 import net.mcreator.cobblestone.procedures.SetPipelineEnergyProcedure;
 import net.mcreator.cobblestone.block.entity.GoldPipelineBlockEntity;
 
+import com.google.common.collect.ImmutableMap;
+
 public class GoldPipelineBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public GoldPipelineBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+	}
+
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(FACING)) {
+				case NORTH -> box(0, 6, 6, 16, 10, 10);
+				case EAST -> box(6, 6, 0, 10, 10, 16);
+				case WEST -> box(6, 6, 0, 10, 10, 16);
+				default -> box(0, 6, 6, 16, 10, 10);
+			};
+		});
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.get(state);
 	}
 
 	@Override

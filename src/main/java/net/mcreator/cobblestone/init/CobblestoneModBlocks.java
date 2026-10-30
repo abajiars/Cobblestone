@@ -27,6 +27,7 @@ public class CobblestoneModBlocks {
 	public static final DeferredBlock<Block> MONITOR;
 	public static final DeferredBlock<Block> SOLAR_GENERATOR;
 	public static final DeferredBlock<Block> GOLD_PIPELINE;
+	public static final DeferredBlock<Block> ELECTRIC_EXTRUDER;
 	static {
 		HAMMER_MACHINE = REGISTRY.register("hammer_machine", HammerMachineBlock::new);
 		RAIN_CONNETOR = REGISTRY.register("rain_connetor", RainConnetorBlock::new);
@@ -42,6 +43,7 @@ public class CobblestoneModBlocks {
 		MONITOR = REGISTRY.register("monitor", MonitorBlock::new);
 		SOLAR_GENERATOR = REGISTRY.register("solar_generator", SolarGeneratorBlock::new);
 		GOLD_PIPELINE = REGISTRY.register("gold_pipeline", GoldPipelineBlock::new);
+		ELECTRIC_EXTRUDER = REGISTRY.register("electric_extruder", ElectricExtruderBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

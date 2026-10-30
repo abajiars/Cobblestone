@@ -9,10 +9,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cobblestone.init.CobblestoneModItems;
@@ -33,41 +29,11 @@ public class SieveItemProcedure {
 				}
 				if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") >= 60) {
 					world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 9) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.FLINT));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 5) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.STONE_NUGGET.get()));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.COAL));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) == 1 * (getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip16 ? blockstate.getValue(_getip16) : -1)) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.IRON_NUGGET));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if ((getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip19 ? blockstate.getValue(_getip19) : -1) > 1 && Mth.nextInt(RandomSource.create(), 1, 10) == 2) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.LAPIS_LAZULI));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.FLINT), 9, 1, 1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(CobblestoneModItems.STONE_NUGGET.get()), 5, 1, 1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.COAL), 3, 1, 1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.IRON_NUGGET), 1, 1, getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip9 ? blockstate.getValue(_getip9) : -1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.LAPIS_LAZULI), 2, 2, 1);
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -93,41 +59,12 @@ public class SieveItemProcedure {
 				}
 				if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") >= 60) {
 					world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 5) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.GLASS_DUST.get()));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 1) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.QUARTZ_DUST.get()));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.BONE_MEAL));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(CobblestoneModItems.COPPER_NUGGET.get()));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if ((getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip38 ? blockstate.getValue(_getip38) : -1) > 1 && Mth.nextInt(RandomSource.create(), 1, 10) == 1) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.GOLD_NUGGET));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(CobblestoneModItems.GLASS_DUST.get()), 5, 1, 1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(CobblestoneModItems.QUARTZ_DUST.get()), 1, 1, 1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.BONE_MEAL), 3, 1, 1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(CobblestoneModItems.COPPER_NUGGET.get()), 1, 1,
+							getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip18 ? blockstate.getValue(_getip18) : -1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.GOLD_NUGGET), 1, 2, 1);
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -153,20 +90,8 @@ public class SieveItemProcedure {
 				}
 				if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "second") >= 60) {
 					world.setBlock(BlockPos.containing(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 5) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.WHEAT_SEEDS));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-					if (Mth.nextInt(RandomSource.create(), 1, 10) <= 3) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Blocks.OAK_SAPLING));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.WHEAT_SEEDS), 5, 1, 1);
+					SieveItemPProcedure.execute(world, x, y, z, blockstate, new ItemStack(Items.GOLD_NUGGET), 1, 1, getPropertyByName(blockstate, "screen") instanceof IntegerProperty _getip27 ? blockstate.getValue(_getip27) : -1);
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);

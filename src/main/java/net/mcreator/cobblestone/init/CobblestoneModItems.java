@@ -55,6 +55,7 @@ public class CobblestoneModItems {
 	public static final DeferredItem<Item> REDSTONE_BATTERY;
 	public static final DeferredItem<Item> OVERCLOCKER_UPGRADE;
 	public static final DeferredItem<Item> STONE_BOOK;
+	public static final DeferredItem<Item> ELECTRIC_EXTRUDER;
 	static {
 		HAMMER = REGISTRY.register("hammer", HammerItem::new);
 		STONE_STICK = REGISTRY.register("stone_stick", StoneStickItem::new);
@@ -95,6 +96,7 @@ public class CobblestoneModItems {
 		REDSTONE_BATTERY = REGISTRY.register("redstone_battery", RedstoneBatteryItem::new);
 		OVERCLOCKER_UPGRADE = REGISTRY.register("overclocker_upgrade", OverclockerUpgradeItem::new);
 		STONE_BOOK = REGISTRY.register("stone_book", StoneBookItem::new);
+		ELECTRIC_EXTRUDER = block(CobblestoneModBlocks.ELECTRIC_EXTRUDER);
 	}
 
 	// Start of user code block custom items

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,is_working=true": {
+      "model": "cobblestone:block/electric_extruder_0"
+    },
+    "facing=north,is_working=false": {
+      "model": "cobblestone:block/electric_extruder"
+    },
+    "facing=east,is_working=true": {
+      "model": "cobblestone:block/electric_extruder_0",
+      "y": 90
+    },
+    "facing=east,is_working=false": {
+      "model": "cobblestone:block/electric_extruder",
+      "y": 90
+    },
+    "facing=south,is_working=true": {
+      "model": "cobblestone:block/electric_extruder_0",
+      "y": 180
+    },
+    "facing=south,is_working=false": {
+      "model": "cobblestone:block/electric_extruder",
+      "y": 180
+    },
+    "facing=west,is_working=true": {
+      "model": "cobblestone:block/electric_extruder_0",
+      "y": 270
+    },
+    "facing=west,is_working=false": {
+      "model": "cobblestone:block/electric_extruder",
+      "y": 270
+    }
+  }
+}

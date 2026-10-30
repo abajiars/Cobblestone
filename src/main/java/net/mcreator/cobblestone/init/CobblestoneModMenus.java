@@ -29,6 +29,7 @@ public class CobblestoneModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<ESTGUIMenu>> ESTGUI = REGISTRY.register("estgui", () -> IMenuTypeExtension.create(ESTGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ChargingDeviceGUIMenu>> CHARGING_DEVICE_GUI = REGISTRY.register("charging_device_gui", () -> IMenuTypeExtension.create(ChargingDeviceGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<MonitorGUIMenu>> MONITOR_GUI = REGISTRY.register("monitor_gui", () -> IMenuTypeExtension.create(MonitorGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ElectricExtruderGUIMenu>> ELECTRIC_EXTRUDER_GUI = REGISTRY.register("electric_extruder_gui", () -> IMenuTypeExtension.create(ElectricExtruderGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
