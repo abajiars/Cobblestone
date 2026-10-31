@@ -16,7 +16,8 @@ Java: 21+ (25 is the best)
 * Add more electric machine
 * The Battery and the machine's upgrade
 * The electricity system
-* Sieve
+* Collect rain to the clay
+* Sieve to the ores
 * and more...
 
 # Else
