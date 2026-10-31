@@ -1,7 +1,8 @@
 ![](https://github.com/abajiars/Cobblestone/blob/master/src/main/resources/assets/cobblestone/textures/cobblestone_je5_be3.png)
 
-*In the vanilla version, it was difficult for us to survive in a world with only stones.
-However, this mod has changed these.*
+
+_In the vanilla version, it was difficult for us to survive in a world with only stones.
+However, this mod has changed these._
 
 Cobblestone give birth to all things.<br>
 Made from **MCreator**<br>
